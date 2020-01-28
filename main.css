@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  border: solid red 2px;
+  margin-bottom: 0;
+}
+
+body * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 10px auto;
+  text-align: center;
+}
+
+section * {
+  margin: 10px auto;
+  border: solid 2px black;
+}
+
+nav {
+  font-size: 3rem;
+  height: 20%;
+}
+
+main {
+  height: 60%;
+}
+footer {
+  height: 20%;
+  border: solid 2px blue;
+  padding: 1%;
+  margin-bottom: 0;
+}
+
+footer * {
+  margin-bottom: 0;
+}
