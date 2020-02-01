@@ -4,37 +4,58 @@
 
 body,
 html {
-  height: 100%;
-  border: solid red 2px;
   margin-bottom: 0;
+  padding: 0;
 }
 
 body * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 10px auto;
+  margin: 0 auto;
   text-align: center;
+  padding: 2%;
 }
 
-section * {
-  margin: 10px auto;
-  border: solid 2px black;
-}
-
-nav {
+header {
   font-size: 3rem;
   height: 20%;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 auto;
+  height: 50%;
+  background-color: rgb(176, 184, 176);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.5rem;
+  height: 50%;
+  background-color: rgb(99, 97, 97);
 }
 
 main {
-  height: 60%;
-}
-footer {
-  height: 20%;
-  border: solid 2px blue;
-  padding: 1%;
-  margin-bottom: 0;
+  height: 65%;
 }
 
-footer * {
-  margin-bottom: 0;
+.text {
+  margin: 10px auto;
+
+  height: 68%;
+}
+
+.text p {
+  height: 175px;
+  margin: 5px;
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: gray;
+}
+
+footer {
+  height: 150px;
+  margin: 10px auto 0 auto;
+  background-color: rgb(176, 184, 176);
 }
