@@ -21,7 +21,7 @@ body * {
 }
 
 .headshot {
-  width: 80%;
+  width: 60%;
 }
 
 header {
@@ -49,8 +49,12 @@ main {
   height: 65%;
 }
 
-.text {
+.text, .screenshots-full-flex {
   margin: 10px auto;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text p {
@@ -60,24 +64,23 @@ main {
   background-color: gray;
 }
 
-.link-button {
-  display: block;
-}
-
-.screenshots-full-flex,
-.screenshots-thumbs-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .screenshot {
   width: 80%;
 }
 
+.screenshot-thumbs {
+  width: 40%;
+}
+
+.screenshot-thumbs-flex {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 footer {
   height: 150px;
-  width: 100%;
   margin: 10px auto 0 auto;
   background-color: rgb(176, 184, 176);
 }

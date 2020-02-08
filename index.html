@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main>
-      <section class="text">
+      <section id="landing" class="text">
         <p>
           My name's Amy and I am a full stack developer and self-professed
           Francophile.
@@ -41,7 +41,7 @@
           details.
         </p>
       </section>
-      <section class="text">
+      <section id="about" class="text">
         <p>
           I love web development because I get so much satisfaction from
           building something with my own two hands (well, a keyboard too...).
@@ -66,7 +66,7 @@
           of the joy and stress relief that it brings me.
         </p>
       </section>
-      <section class="text">
+      <section id="projects" class="text">
         <article>
           <a href="#"
             ><img
@@ -79,9 +79,12 @@
             An interactive multiple-choice quiz about human languages from
             around the world.
           </p>
+          <p>
+            <a href="#"><button type="button">See More</button></a>
+          </p>
         </article>
       </section>
-      <section class="text">
+      <section id="quiz-app-summary" class="text">
         <img
           class="screenshot"
           src="Images/Compressed/Quiz-app-1.png"
@@ -106,26 +109,36 @@
         >
 
         <p><a href="#">See Full-Size Images</a></p>
-        <div class="screenshots-thumbs-flex" role="figure">
+        <div class="screenshot-thumbs-flex">
           <img
+            class="screenshot-thumbs"
             src="Images/Compressed/Thumbs/Quiz-app-thumb-correct.png"
             alt="thumbnail of correct answer display"
           />
           <img
+            class="screenshot-thumbs"
             src="Images/Compressed/Thumbs/Quiz-app-thumb-user-error.png"
             alt="thumbnail of user error notification"
           />
+        </div>
+        <div class="screenshot-thumbs-flex">
           <img
+            class="screenshot-thumbs"
             src="Images/Compressed/Thumbs/Quiz-app-thumb-incorrect.png"
             alt="thumbnail of incorrect answer display"
           />
           <img
+            class="screenshot-thumbs"
             src="Images/Compressed/Thumbs/Quiz-app-thumb-final.png"
             alt="thumbnail of final score display"
           />
         </div>
       </section>
-      <div class="screenshots-full-flex" role="figure">
+      <div
+        id="quiz-app-images-full"
+        class="screenshots-full-flex"
+        role="figure"
+      >
         <img
           class="screenshot"
           src="Images/Compressed/Quiz-app-correct.png"
