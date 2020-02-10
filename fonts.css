@@ -1,0 +1,36 @@
+body * {
+  font-family: "Muli", sans-serif;
+}
+
+ul {
+  font-size: 1.25rem;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  line-height: 120%;
+  font-family: "Philosopher", sans-serif;
+}
+
+.headline,
+article,
+.image-link {
+  text-align: center;
+}
+
+.text {
+  line-height: 150%;
+}
+
+em {
+  font-weight: bold;
+  font-family: "Philosopher", sans-serif;
+  font-style: normal;
+}
