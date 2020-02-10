@@ -36,7 +36,7 @@
   <body>
     <header>
       <h1>Amy Pepper</h1>
-      <nav>
+      <nav class="nav-bar">
         <ul>
           <li>About</li>
           <li>Projects</li>
@@ -47,12 +47,12 @@
     <main>
       <section id="landing" class="text headline">
         <p>
-          My name's Amy and I am a full stack developer and self-professed
-          Francophile.
+          My name's Amy and I am a<span>full stack developer</span>and
+          self-professed Francophile.
         </p>
         <p>
-          Accessibility and UX matter a lot to me, and I'm all about the
-          details.
+          <span>Accessibility</span>and <span>UX</span>matter a lot to me, and
+          I'm all about the <span>details.</span>
         </p>
       </section>
       <section id="about" class="text">
@@ -94,7 +94,9 @@
             around the world.
           </p>
           <p>
-            <a href="#"><button type="button">See More</button></a>
+            <a href="#"
+              ><button class="link-button" type="button">See More</button></a
+            >
           </p>
         </article>
       </section>
@@ -115,13 +117,17 @@
         </p>
         <p><em>Technologies:</em> HTML5, CSS3, Javascript, and jQuery.</p>
 
-        <a class="link-button" href="https://amypepper.github.io/quiz-app/"
-          ><button type="button">Live App</button></a
+        <p>
+          <a href="https://amypepper.github.io/quiz-app/"
+            ><button class="link-button" type="button">Live App</button></a
+          >
+        </p>
+        <a href="https://github.com/amypepper/quiz-app"
+          ><button class="link-button" type="button">Repo</button></a
         >
-        <a class="link-button" href="https://github.com/amypepper/quiz-app"
-          ><button type="button">Repo</button></a
-        >
-
+        <p class="image-link">
+          <a class="plain-link" href="#">See Full-Size Images</a>
+        </p>
         <div class="screenshot-thumbs-flex">
           <img
             class="screenshot-thumbs"
@@ -146,7 +152,6 @@
             alt="thumbnail of final score display"
           />
         </div>
-        <p class="image-link"><a href="#">See Full-Size Images</a></p>
       </section>
       <div
         id="quiz-app-images-full"
@@ -176,11 +181,13 @@
       </div>
     </main>
     <footer class="footer">
-      <p>
+      <p class="footer-text">
         Contact Me
       </p>
       <p>
-        <a href="mailto:amycarlsonpepper@gmail.com"
+        <a
+          class="plain-link footer-link"
+          href="mailto:amycarlsonpepper@gmail.com"
           >amycarlsonpepper@gmail.com</a
         >
       </p>

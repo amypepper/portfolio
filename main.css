@@ -17,20 +17,23 @@ body * {
 header {
   height: 20%;
   margin-top: 0;
-  border: solid 2px red;
 }
 
 h1 {
   margin: 0 auto;
   height: 50%;
-  border: solid 2px chartreuse;
 }
 
 ul {
   display: flex;
+  align-items: center;
   list-style: none;
-  height: 50%;
-  border: solid 2px green;
+  height: 50px;
+  border: solid 2px white;
+}
+.nav-bar {
+  height: 50px;
+  align-items: center;
 }
 
 main {
@@ -68,8 +71,10 @@ main {
   width: 40%;
 }
 
-button {
+.link-button {
   width: 120px;
+  border-radius: 10px;
+  border: none;
 }
 
 .screenshot-thumbs-flex {
@@ -82,6 +87,8 @@ button {
 footer {
   height: 20%;
   margin: 10px auto 0 auto;
+  justify-content: center;
+  text-align: center;
   border: solid 2px red;
 }
 

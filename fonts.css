@@ -2,10 +2,10 @@ body * {
   font-family: "Muli", sans-serif;
 }
 
-ul {
+.nav-bar {
   font-size: 1.25rem;
   font-family: "Muli", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -24,7 +24,11 @@ article,
 .image-link {
   text-align: center;
 }
-
+.plain-link,
+.link-button {
+  font-weight: bold;
+  text-decoration: none;
+}
 .text {
   line-height: 150%;
 }
@@ -33,4 +37,16 @@ em {
   font-weight: bold;
   font-family: "Philosopher", sans-serif;
   font-style: normal;
+}
+span {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.quiz-app-link {
+  font-size: 0.75rem;
+}
+
+.footer-text {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.5rem;
 }
