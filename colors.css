@@ -1,28 +1,29 @@
 header {
-  background: #92ac86;
+  background: #1a0703;
 }
 h1 {
-  color: #290b04;
+  color: white;
 }
 .nav-bar {
-  background-color: #290b04;
-  color: #92ac86;
+  color: #918b79;
 }
-
+.text {
+  color: #1a0703;
+}
 .plain-link {
-  color: #55251d;
+  color: #748b69;
 }
 .link-button {
-  color: #290b04;
-  background-color: #92ac86;
+  color: white;
+  background-color: #55251d;
 }
 
 .footer {
-  background-color: #92ac86;
-  color: #290b04;
+  background-color: #1a0703;
+  color: white;
 }
 
 .footer-text,
 .footer-link {
-  color: #290b04;
+  color: white;
 }
