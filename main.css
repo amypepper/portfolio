@@ -38,14 +38,13 @@ h1 {
   padding-top: 5px;
 }
 
-li {
+.menu-items li {
   padding: 0 20px;
 }
 .nav-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50px;
   width: 90%;
   margin: 0 auto;
   padding-bottom: 0;
@@ -126,21 +125,37 @@ footer {
 
 @media screen and (min-width: 900px) {
   .header {
-    border: solid 2px goldenrod;
+    /* border: solid 2px goldenrod; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 40%;
-    height: 100vh;
+    height: 65vh;
     position: fixed;
     left: 0;
     top: 0;
+    border-radius: 0;
+    padding-bottom: 0;
   }
   h1 {
     height: 25%;
+    /* border: solid 2px salmon; */
+  }
+  .nav-bar {
+    /* border: solid 2px wheat; */
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .menu-items {
     flex-direction: column;
   }
   .menu-items li {
-    padding: 20px;
+    padding: 30px;
+  }
+  .hide-li {
+    display: none;
   }
   .main {
     width: 60%;
@@ -149,12 +164,20 @@ footer {
   }
   body {
     display: flex;
-    border: solid 2px red;
+    /* border: solid 2px red; */
   }
   .screenshot {
-    max-width: 600px;
+    max-width: 450px;
   }
   .footer {
-    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 35vh;
+    width: 40%;
+    border-radius: 0;
+  }
+  .logo {
+    height: 60px;
   }
 }

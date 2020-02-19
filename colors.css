@@ -8,13 +8,13 @@ h1 {
   color: #918b79;
 }
 .main {
-  background-color: #918b79;
+  background-color: white;
 }
 .text {
   color: #1a0703;
 }
 .plain-link {
-  color: #5f7456;
+  color: #55251d;
 }
 .link-button {
   color: white;
@@ -24,6 +24,8 @@ h1 {
 .footer {
   background-color: #1a0703;
   color: white;
+  padding: 0.5%;
+  margin: 0;
 }
 
 .footer-text,
