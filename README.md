@@ -1,1 +1,1 @@
-This is the repo for my first portfolio website. It is a work in progress, and I'm learning a lot as I do it. I am doing this as part of my Thinkful bootcamp curriculum as I'm studying to be a full stack web developer.
+This is the repo for my first portfolio website. It is a work in progress, and I'm learning a lot as I do it. I am doing this as part of my Thinkful bootcamp curriculum. I'm studying to be a full stack web developer.
