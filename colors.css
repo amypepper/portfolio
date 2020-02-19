@@ -20,7 +20,10 @@ h1 {
   color: white;
   background-color: #55251d;
 }
-
+.call-to-action {
+  background-color: #728f64;
+  color: #1a0703;
+}
 .footer {
   background-color: #1a0703;
   color: white;
