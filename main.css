@@ -14,7 +14,7 @@ body * {
   border-radius: 4px;
 }
 
-header {
+.header {
   height: 20%;
   margin-top: 0;
   padding-bottom: 0;
@@ -26,7 +26,7 @@ h1 {
   padding: 10px;
 }
 
-ul {
+.menu-items {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -58,12 +58,11 @@ main {
 
 .headshot {
   width: 60%;
-  flex-grow: 0;
+  padding: 0;
 }
 
 .text,
-.screenshots-full-flex,
-.header {
+.screenshots-full-flex {
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -116,7 +115,7 @@ footer {
 
 @media screen and (min-width: 520px) {
   .headshot {
-    max-width: 200px;
+    max-width: 300px;
   }
   .quiz-app-text {
     width: 100%;
@@ -126,4 +125,36 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+  .header {
+    border: solid 2px goldenrod;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  h1 {
+    height: 25%;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
+  .menu-items li {
+    padding: 20px;
+  }
+  .main {
+    width: 60%;
+    margin-left: 40%;
+    margin-right: 0;
+  }
+  body {
+    display: flex;
+    border: solid 2px red;
+  }
+  .screenshot {
+    max-width: 600px;
+  }
+  .footer {
+    display: none;
+  }
 }
