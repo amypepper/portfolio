@@ -44,7 +44,7 @@ const about = `<section id="about" class="text">
         </p>
       </section>`;
 
-const projects = `<section id="projects" class="text">
+const projectLanding = `<section id="projects" class="text">
         <article>
           <a href="#"
             ><img
@@ -59,7 +59,7 @@ const projects = `<section id="projects" class="text">
           </p>
           <p>
             <a href="#"
-              ><button class="link-button" type="button">See More</button></a
+              ><button class="link-button" type="button">Project Details</button></a
             >
           </p>
         </article>
@@ -151,15 +151,52 @@ const quizAppScreenshots = `<div
       </div>`;
 
 function renderLanding() {
-  $(".main").html(landing);
+  $(".js-main").html(landing);
 }
 
-function renderAbout() {}
+function handleAboutClick() {
+  $(".js-about-link").click(function(event) {
+    renderAbout();
+    event.preventDefault();
+    $(".js-about-link").addClass("menu-focus");
+    $(".js-projects-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
+  });
+}
+function renderAbout() {
+  $(".js-main").html(about);
+}
 
-function renderProjectLanding() {}
+function handleProjectLandingClick() {
+  $(".js-projects-link").click(function(event) {
+    renderProjectLanding();
+    event.preventDefault();
+    $(".js-projects-link").addClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
+  });
+}
+function handleContactClick() {
+  $(".js-contact-link").click(function(event) {
+    event.preventDefault();
+    $(".js-contact-link").addClass("menu-focus");
+    $(".js-projects-link").removeClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+  });
+}
+function renderProjectLanding() {
+  $(".js-main").html(projectLanding);
+}
 
-function renderQuizAppProject() {}
+function renderQuizAppProject() {
+  $(".js-main").html(quizApp);
+}
 
-function renderFullScreenshots() {}
+function renderFullScreenshots() {
+  $(".js-main").html(quizAppScreenshots);
+}
 
 renderLanding();
+handleAboutClick();
+handleProjectLandingClick();
+handleContactClick();

@@ -94,7 +94,7 @@ em {
 }
 
 .link-button {
-  width: 120px;
+  width: 150px;
   border-radius: 10px;
   border: none;
 }
@@ -188,8 +188,8 @@ footer {
   }
 
   .call-to-action {
-    width: 200px;
-    height: 60px;
+    width: 180px;
+    height: 50px;
   }
   body {
     border: solid 2px red;
@@ -199,6 +199,9 @@ footer {
     max-width: 450px;
   }
   .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -208,5 +211,10 @@ footer {
   }
   .logo {
     height: 60px;
-  }
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
 }

@@ -56,12 +56,19 @@ span {
     font-size: 1.5rem;
   }
   .headline {
-    font-size: 1.75rem;
-  }
-  .headline span {
-    font-size: 2rem;
-  }
-  .call-to-action {
     font-size: 1.5rem;
   }
+  .headline span {
+    font-size: 1.75rem;
+  }
+  .call-to-action {
+    font-size: 1.25rem;
+  }
+}
+/* HELPER CLASSES */
+
+li.menu-focus {
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: #a7d49b;
 }
