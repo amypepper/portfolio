@@ -10,11 +10,9 @@ const landing = `<section id="landing" class="text headline">
           I'm all about the<span>details.</span>
         </p>
         <p>
-          <a href="#"
-            ><button class="link-button call-to-action" type="button">
+          <button class="link-button call-to-action" type="button">
               See my work
-            </button></a
-          >
+          </button>
         </p>
       </section>`;
 
@@ -45,23 +43,18 @@ const about = `<section id="about" class="text">
       </section>`;
 
 const projectLanding = `<section id="projects" class="text">
-        <article>
-          <a href="#"
-            ><img
-              class="screenshot"
-              src="Images/Compressed/Quiz-app-1.png"
-              alt="screenshot of a quiz about the languages of the world"
-          /></a>
+        <article class="js-project-details-link">
+          <img
+            class="screenshot"
+            src="Images/Compressed/Quiz-app-1.png"
+            alt="screenshot of a quiz about the languages of the world"
+          />
           <h2>Languages of the World Quiz</h2>
           <p>
             An interactive multiple-choice quiz about human languages from
             around the world.
           </p>
-          <p>
-            <a href="#"
-              ><button class="link-button" type="button">Project Details</button></a
-            >
-          </p>
+          <button class="link-button js-project-details-link" type="button">Project Details</button>
         </article>
       </section>`;
 
@@ -196,7 +189,22 @@ function renderFullScreenshots() {
   $(".js-main").html(quizAppScreenshots);
 }
 
+function callToActionLink() {
+  $(".call-to-action").click(event => {
+    event.preventDefault();
+    renderProjectLanding();
+  });
+}
+
+function projectDetailsLink() {
+  $(".js-project-details-link").click(function(event) {
+    event.preventDefault();
+    renderQuizAppProject();
+  });
+}
 renderLanding();
 handleAboutClick();
 handleProjectLandingClick();
 handleContactClick();
+callToActionLink();
+projectDetailsLink();
