@@ -43,7 +43,7 @@ const about = `<section id="about" class="text">
       </section>`;
 
 const projectLanding = `<section id="projects" class="text">
-        <article class="js-project-details-link">
+        <article>
           <img
             class="screenshot"
             src="Images/Compressed/Quiz-app-1.png"
@@ -143,40 +143,16 @@ const quizAppScreenshots = `<div
         />
       </div>`;
 
+// ******************RENDER FUNCTIONS**********************
+
 function renderLanding() {
   $(".js-main").html(landing);
 }
 
-function handleAboutClick() {
-  $(".js-about-link").click(function(event) {
-    renderAbout();
-    event.preventDefault();
-    $(".js-about-link").addClass("menu-focus");
-    $(".js-projects-link").removeClass("menu-focus");
-    $(".js-contact-link").removeClass("menu-focus");
-  });
-}
 function renderAbout() {
   $(".js-main").html(about);
 }
 
-function handleProjectLandingClick() {
-  $(".js-projects-link").click(function(event) {
-    renderProjectLanding();
-    event.preventDefault();
-    $(".js-projects-link").addClass("menu-focus");
-    $(".js-about-link").removeClass("menu-focus");
-    $(".js-contact-link").removeClass("menu-focus");
-  });
-}
-function handleContactClick() {
-  $(".js-contact-link").click(function(event) {
-    event.preventDefault();
-    $(".js-contact-link").addClass("menu-focus");
-    $(".js-projects-link").removeClass("menu-focus");
-    $(".js-about-link").removeClass("menu-focus");
-  });
-}
 function renderProjectLanding() {
   $(".js-main").html(projectLanding);
 }
@@ -189,20 +165,59 @@ function renderFullScreenshots() {
   $(".js-main").html(quizAppScreenshots);
 }
 
+// ******************************EVENT LISTENERS********************
+
+function handleBannerClick() {
+  $(".header").on("click", "h1", event => {
+    event.preventDefault();
+    renderLanding();
+  });
+}
+
+function handleAboutClick() {
+  $(".js-about-link").click(function(event) {
+    renderAbout();
+    event.preventDefault();
+    $(".js-about-link").addClass("menu-focus");
+    $(".js-projects-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
+  });
+}
+
+function handleProjectLandingClick() {
+  $(".js-projects-link").click(function(event) {
+    renderProjectLanding();
+    event.preventDefault();
+    $(".js-projects-link").addClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
+  });
+}
+
+function handleContactClick() {
+  $(".js-contact-link").click(function(event) {
+    event.preventDefault();
+    $(".js-contact-link").addClass("menu-focus");
+    $(".js-projects-link").removeClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+  });
+}
+
 function callToActionLink() {
-  $(".call-to-action").click(event => {
+  $(".js-main").on("click", ".call-to-action", event => {
     event.preventDefault();
     renderProjectLanding();
   });
 }
 
 function projectDetailsLink() {
-  $(".js-project-details-link").click(function(event) {
+  $(".js-main").on("click", ".js-project-details-link", function(event) {
     event.preventDefault();
     renderQuizAppProject();
   });
 }
 renderLanding();
+handleBannerClick();
 handleAboutClick();
 handleProjectLandingClick();
 handleContactClick();

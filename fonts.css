@@ -65,10 +65,8 @@ span {
     font-size: 1.25rem;
   }
 }
-/* HELPER CLASSES */
 
 li.menu-focus {
   font-weight: 900;
   font-size: 1.75rem;
-  color: #a7d49b;
 }

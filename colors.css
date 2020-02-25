@@ -7,6 +7,9 @@ h1 {
 .nav-bar {
   color: #918b79;
 }
+li.menu-focus {
+  color: #728f64;
+}
 .main {
   background-color: white;
 }
@@ -34,4 +37,8 @@ h1 {
 .footer-text,
 .footer-link {
   color: white;
+}
+
+.footer-link:hover {
+  color: #728f64;
 }
