@@ -1,6 +1,6 @@
 "use strict";
 
-const landing = `<section id="landing" class="text headline">
+const landing = `<section class="text headline">
         <p>
           My name's Amy and I am a<span>full stack developer</span>and
           self-professed Francophile.
@@ -42,7 +42,7 @@ const about = `<section id="about" class="text">
         </p>
       </section>`;
 
-const projectLanding = `<section id="projects" class="text">
+const projectLanding = `<section class="text project-landing">
         <article>
           <img
             class="screenshot"
@@ -58,7 +58,7 @@ const projectLanding = `<section id="projects" class="text">
         </article>
       </section>`;
 
-const quizApp = `<section id="quiz-app-summary" class="text quiz-app-text">
+const quizApp = `<section class="text quiz-app-text">
         <img
           class="screenshot hero"
           src="Images/Compressed/Quiz-app-1.png"
@@ -77,19 +77,16 @@ const quizApp = `<section id="quiz-app-summary" class="text quiz-app-text">
           <em>Technologies:</em> HTML5, CSS3, Javascript, and jQuery.
         </p>
 
-        <p>
-          <a href="https://amypepper.github.io/quiz-app/"
+        
+          <a href="https://amypepper.github.io/quiz-app/" target="_blank"
             ><button class="link-button" type="button">Live App</button></a
           >
-        </p>
-        <p>
-          <a href="https://github.com/amypepper/quiz-app"
+       
+          <a href="https://github.com/amypepper/quiz-app" target="_blank"
             ><button class="link-button" type="button">Repo</button></a
           >
-        </p>
-        <p class="image-link">
-          <a class="plain-link" href="#">See Full-Size Images</a>
-        </p>
+      
+        <p class="image-link">See Full-Size Images</p>
         <div class="screenshot-thumbs-flex">
           <img
             class="screenshot-thumbs"
@@ -117,7 +114,6 @@ const quizApp = `<section id="quiz-app-summary" class="text quiz-app-text">
       </section>`;
 
 const quizAppScreenshots = `<div
-        id="quiz-app-images-full"
         class="screenshots-full-flex"
         role="figure"
       >
@@ -165,6 +161,17 @@ function renderFullScreenshots() {
   $(".js-main").html(quizAppScreenshots);
 }
 
+function autoScrollToContacts() {
+  $(".js-contact-link").on("click", function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("html, body").get(0).scrollHeight
+      },
+      2000
+    );
+  });
+}
+
 // ******************************EVENT LISTENERS********************
 
 function handleBannerClick() {
@@ -184,13 +191,14 @@ function handleAboutClick() {
   });
 }
 
-function handleProjectLandingClick() {
+function handleProjectsClick() {
   $(".js-projects-link").click(function(event) {
     renderProjectLanding();
     event.preventDefault();
     $(".js-projects-link").addClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    autoScrollToContacts();
   });
 }
 
@@ -203,6 +211,12 @@ function handleContactClick() {
   });
 }
 
+function quizAppFullScreenshotsLink() {
+  $(".js-main").on("click", ".image-link", function(event) {
+    event.preventDefault();
+    renderFullScreenshots();
+  });
+}
 function callToActionLink() {
   $(".js-main").on("click", ".call-to-action", event => {
     event.preventDefault();
@@ -219,7 +233,8 @@ function projectDetailsLink() {
 renderLanding();
 handleBannerClick();
 handleAboutClick();
-handleProjectLandingClick();
+handleProjectsClick();
 handleContactClick();
 callToActionLink();
 projectDetailsLink();
+quizAppFullScreenshotsLink();

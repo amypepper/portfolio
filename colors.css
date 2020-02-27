@@ -39,6 +39,7 @@ li.menu-focus {
   color: white;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.image-link:hover {
   color: #728f64;
 }

@@ -24,10 +24,14 @@ article,
 .image-link {
   text-align: center;
 }
-.plain-link,
-.link-button {
+.image-link,
+.link-button,
+.footer-link {
   font-weight: bold;
   text-decoration: none;
+}
+.image-link {
+  font-size: 1.25rem;
 }
 .text {
   line-height: 150%;

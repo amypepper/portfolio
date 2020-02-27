@@ -10,8 +10,6 @@ body {
 body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 body * {
   margin: 0 auto;
@@ -25,13 +23,25 @@ body * {
   margin-top: 0;
   padding-bottom: 0;
 }
-
+.nav-bar {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0;
+  padding-top: 0;
+}
 h1 {
   margin: 0 auto;
   height: 50%;
   padding: 10px;
 }
-
+.menu-items {
+  list-style: none;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 5px;
+}
 .menu-items li {
   padding: 0 20px;
 }
@@ -46,21 +56,19 @@ main {
   width: 60%;
   padding: 0;
 }
-
 .text,
 .screenshots-full-flex {
   margin: 10px auto;
+  padding: 0 20px;
 }
 
-.text {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 em {
   padding-left: 0;
 }
 .screenshot {
-  width: 80%;
+  width: 90%;
+  margin: 40px;
+  padding: 0;
 }
 
 .screenshot.hero,
@@ -78,49 +86,50 @@ em {
   border: none;
 }
 
-footer {
+.footer {
   height: 20%;
   width: 100vw;
   margin: 10px auto 0 auto;
-  justify-content: center;
-  text-align: center;
 }
 
 .logo {
   height: 50px;
 }
+h1:hover,
+.image-link:hover,
+.footer-link:hover,
+.logo:hover,
+button:hover,
+.menu-items li:hover {
+  cursor: pointer;
+}
 
-/* FLEX AND ALIGNMENT */
+/************** FLEX AND ALIGNMENT **************** */
 
+body {
+  flex-direction: column;
+  justify-content: space-between;
+}
 .main {
   display: flex;
   flex-direction: column;
-  border: black solid 2px;
 }
 .headline {
-  border: solid 2px crimson;
   justify-content: center;
 }
 
-.nav-bar {
+.nav-bar,
+.text,
+.screenshots-full-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 0;
-  padding-top: 0;
+  justify-content: center;
 }
 .menu-items {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  list-style: none;
-  height: 50px;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 0;
-  padding-top: 5px;
 }
 .screenshot-thumbs-flex {
   display: flex;
@@ -128,14 +137,13 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
-.text,
-.screenshots-full-flex {
-  display: flex;
-  flex-direction: column;
+
+.footer {
   justify-content: center;
+  text-align: center;
 }
 
-/* MEDIA QUERIES */
+/*********** MEDIA QUERIES **********************/
 
 @media screen and (min-width: 520px) {
   .headshot {
@@ -198,9 +206,7 @@ footer {
     border: solid 2px red;
     min-height: 100vh;
   }
-  .screenshot {
-    max-width: 450px;
-  }
+
   .footer {
     display: flex;
     flex-direction: column;
