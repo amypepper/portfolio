@@ -16,7 +16,7 @@ const landing = `<section class="text headline">
         </p>
       </section>`;
 
-const about = `<section id="about" class="text">
+const about = `<section class="text">
         <p>
           I love web development because I get so much satisfaction from
           building something with my own two hands (well, a keyboard too...).
@@ -154,6 +154,7 @@ function renderProjectLanding() {
 }
 
 function renderQuizAppProject() {
+  $(".js-main").addClass("main-alternate");
   $(".js-main").html(quizApp);
 }
 
@@ -161,7 +162,7 @@ function renderFullScreenshots() {
   $(".js-main").html(quizAppScreenshots);
 }
 
-function autoScrollToContacts() {
+function autoScrollToContact() {
   $(".js-contact-link").on("click", function() {
     $("html, body").animate(
       {
@@ -177,28 +178,30 @@ function autoScrollToContacts() {
 function handleBannerClick() {
   $(".header").on("click", "h1", event => {
     event.preventDefault();
+    $(".js-about-link").removeClass("menu-focus");
+    $(".js-projects-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
     renderLanding();
   });
 }
 
 function handleAboutClick() {
   $(".js-about-link").click(function(event) {
-    renderAbout();
     event.preventDefault();
     $(".js-about-link").addClass("menu-focus");
     $(".js-projects-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    renderAbout();
   });
 }
 
 function handleProjectsClick() {
   $(".js-projects-link").click(function(event) {
-    renderProjectLanding();
     event.preventDefault();
     $(".js-projects-link").addClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
-    autoScrollToContacts();
+    renderProjectLanding();
   });
 }
 
@@ -208,18 +211,25 @@ function handleContactClick() {
     $(".js-contact-link").addClass("menu-focus");
     $(".js-projects-link").removeClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
+    autoScrollToContact();
   });
 }
 
 function quizAppFullScreenshotsLink() {
   $(".js-main").on("click", ".image-link", function(event) {
     event.preventDefault();
+    $(".js-projects-link").addClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
     renderFullScreenshots();
   });
 }
 function callToActionLink() {
   $(".js-main").on("click", ".call-to-action", event => {
     event.preventDefault();
+    $(".js-projects-link").addClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
     renderProjectLanding();
   });
 }
@@ -227,6 +237,9 @@ function callToActionLink() {
 function projectDetailsLink() {
   $(".js-main").on("click", ".js-project-details-link", function(event) {
     event.preventDefault();
+    $(".js-projects-link").addClass("menu-focus");
+    $(".js-about-link").removeClass("menu-focus");
+    $(".js-contact-link").removeClass("menu-focus");
     renderQuizAppProject();
   });
 }

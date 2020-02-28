@@ -11,22 +11,21 @@ li.menu-focus {
   color: #728f64;
 }
 .main {
-  background-color: white;
+  background-color: #918b79;
 }
+
 .text {
   color: #1a0703;
 }
 .plain-link {
   color: #55251d;
 }
-.link-button {
+.link-button,
+.call-to-action {
   color: white;
   background-color: #55251d;
 }
-.call-to-action {
-  background-color: #728f64;
-  color: #1a0703;
-}
+
 .footer {
   background-color: #1a0703;
   color: white;
@@ -39,7 +38,9 @@ li.menu-focus {
   color: white;
 }
 
-.footer-link:hover,
 .image-link:hover {
+  color: #55251d;
+}
+.footer-link:hover {
   color: #728f64;
 }
