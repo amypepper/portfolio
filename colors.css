@@ -10,16 +10,15 @@ h1 {
 li.menu-focus {
   color: #728f64;
 }
-.main {
+.main,
+body {
   background-color: #918b79;
 }
 
 .text {
   color: #1a0703;
 }
-.plain-link {
-  color: #55251d;
-}
+
 .link-button,
 .call-to-action {
   color: white;
@@ -37,10 +36,16 @@ li.menu-focus {
 .footer-link {
   color: white;
 }
-
+.link {
+  color: #1a0703;
+}
 .image-link:hover {
   color: #55251d;
 }
 .footer-link:hover {
   color: #728f64;
+}
+
+.email-link:hover {
+  color: white;
 }

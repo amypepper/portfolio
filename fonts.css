@@ -24,25 +24,36 @@ article,
 .image-link {
   text-align: center;
 }
-.image-link,
+.link,
 .link-button,
 .footer-link {
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 .image-link {
   font-size: 1.25rem;
 }
+h2.contact {
+  font-size: 2.5rem;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 900;
+}
 .text {
   line-height: 150%;
+  font-size: 1.25rem;
 }
-
+.contact {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Muli", sans-serif;
+}
 em {
   font-weight: bold;
   font-family: "Philosopher", sans-serif;
   font-style: normal;
 }
-span {
+span.emphasize {
   font-weight: 600;
   font-size: 1.05rem;
 }
@@ -55,11 +66,20 @@ span {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 520px) {
+  .headline p {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+  span.emphasize {
+    font-size: 1.7rem;
+  }
+
 @media screen and (min-width: 900px) {
   .menu-items li {
     font-size: 1.5rem;
   }
-  .headline {
+  .headline p {
     font-size: 1.5rem;
   }
   .headline span {

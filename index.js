@@ -2,18 +2,17 @@
 
 const landing = `<section class="text headline">
         <p>
-          My name's Amy and I am a<span>full stack developer</span>and
+          My name's Amy and I am a<span class="emphasize">full stack developer</span>and
           self-professed Francophile.
         </p>
         <p>
-          <span>Accessibility</span>and<span>UX</span>matter a lot to me, and
-          I'm all about the<span>details.</span>
+          <span class="emphasize">Accessibility</span>and<span class="emphasize">UX</span>matter a lot to me, and
+          I'm all about the<span class="emphasize">details.</span>
         </p>
-        <p>
           <button class="link-button call-to-action" type="button">
               See my work
           </button>
-        </p>
+       
       </section>`;
 
 const about = `<section class="text">
@@ -43,13 +42,13 @@ const about = `<section class="text">
       </section>`;
 
 const projectLanding = `<section class="text project-landing">
-        <article>
+        <article class="project-landing">
           <img
-            class="screenshot"
+            class="screenshot landing"
             src="Images/Compressed/Quiz-app-1.png"
             alt="screenshot of a quiz about the languages of the world"
           />
-          <h2>Languages of the World Quiz</h2>
+          <h2 class="project-heading">Languages of the World Quiz</h2>
           <p>
             An interactive multiple-choice quiz about human languages from
             around the world.
@@ -57,6 +56,27 @@ const projectLanding = `<section class="text project-landing">
           <button class="link-button js-project-details-link" type="button">Project Details</button>
         </article>
       </section>`;
+
+const contact = `<section class="contact">
+<h2 class="text contact">Contact Me</h2>
+
+<a class="link email-link" href="mailto:amycarlsonpepper@gmail.com">amycarlsonpepper@gmail.com</a>
+
+<div class="logo-container">
+<a class="contact-page-logo" href="https://www.linkedin.com/in/amycarlsonpepper" target="_blank"
+  ><img
+    class="contact-logo"
+    src="Images/Compressed/LI-In-Bug.png"
+    alt="LinkedIn logo that links to Amy's LinkedIn profile"
+/></a>
+<a class="contact-page-logo" href="https://github.com/amypepper" target="_blank"
+  ><img
+    class="contact-logo"
+    src="Images/Compressed/GitHub-Mark-64px.png"
+    alt="GitHub logo that links to Amy's GitHub profile"
+/></a>
+</div>
+</section>`;
 
 const quizApp = `<section class="text quiz-app-text">
         <img
@@ -78,15 +98,13 @@ const quizApp = `<section class="text quiz-app-text">
         </p>
 
         
-          <a href="https://amypepper.github.io/quiz-app/" target="_blank"
-            ><button class="link-button" type="button">Live App</button></a
-          >
+          <a class="link-button" href="https://amypepper.github.io/quiz-app/" target="_blank"
+            >Live App</a>
        
-          <a href="https://github.com/amypepper/quiz-app" target="_blank"
-            ><button class="link-button" type="button">Repo</button></a
-          >
+          <a class="link-button" href="https://github.com/amypepper/quiz-app" target="_blank"
+            >Repo</a>
       
-        <p class="image-link">See Full-Size Images</p>
+        <p class="link image-link">See Full-Size Images</p>
         <div class="screenshot-thumbs-flex">
           <img
             class="screenshot-thumbs"
@@ -118,22 +136,22 @@ const quizAppScreenshots = `<div
         role="figure"
       >
         <img
-          class="screenshot"
+          class="screenshot full"
           src="Images/Compressed/Quiz-app-correct.png"
           alt="screenshot of correct answer display"
         />
         <img
-          class="screenshot"
+          class="screenshot full"
           src="Images/Compressed/Quiz-app-user-error.png"
           alt="screenshot of user error notification"
         />
         <img
-          class="screenshot"
+          class="screenshot full"
           src="Images/Compressed/Quiz-app-incorrect.png"
           alt="screenshot of incorrect answer display"
         />
         <img
-          class="screenshot"
+          class="screenshot full"
           src="Images/Compressed/Quiz-app-final.png"
           alt="screenshot of final score display"
         />
@@ -152,25 +170,16 @@ function renderAbout() {
 function renderProjectLanding() {
   $(".js-main").html(projectLanding);
 }
-
+function renderContact() {
+  $(".js-main").html(contact);
+  $(".footer").addClass("hide-footer");
+}
 function renderQuizAppProject() {
-  $(".js-main").addClass("main-alternate");
   $(".js-main").html(quizApp);
 }
 
 function renderFullScreenshots() {
   $(".js-main").html(quizAppScreenshots);
-}
-
-function autoScrollToContact() {
-  $(".js-contact-link").on("click", function() {
-    $("html, body").animate(
-      {
-        scrollTop: $("html, body").get(0).scrollHeight
-      },
-      2000
-    );
-  });
 }
 
 // ******************************EVENT LISTENERS********************
@@ -181,6 +190,7 @@ function handleBannerClick() {
     $(".js-about-link").removeClass("menu-focus");
     $(".js-projects-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    $(".footer").removeClass("hide-footer");
     renderLanding();
   });
 }
@@ -191,6 +201,7 @@ function handleAboutClick() {
     $(".js-about-link").addClass("menu-focus");
     $(".js-projects-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    $(".footer").removeClass("hide-footer");
     renderAbout();
   });
 }
@@ -201,6 +212,7 @@ function handleProjectsClick() {
     $(".js-projects-link").addClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    $(".footer").removeClass("hide-footer");
     renderProjectLanding();
   });
 }
@@ -211,7 +223,7 @@ function handleContactClick() {
     $(".js-contact-link").addClass("menu-focus");
     $(".js-projects-link").removeClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
-    autoScrollToContact();
+    renderContact();
   });
 }
 
@@ -221,6 +233,7 @@ function quizAppFullScreenshotsLink() {
     $(".js-projects-link").addClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    $(".footer").removeClass("hide-footer");
     renderFullScreenshots();
   });
 }
@@ -230,6 +243,7 @@ function callToActionLink() {
     $(".js-projects-link").addClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    $(".footer").removeClass("hide-footer");
     renderProjectLanding();
   });
 }
@@ -240,9 +254,11 @@ function projectDetailsLink() {
     $(".js-projects-link").addClass("menu-focus");
     $(".js-about-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
+    $(".footer").removeClass("hide-footer");
     renderQuizAppProject();
   });
 }
+
 renderLanding();
 handleBannerClick();
 handleAboutClick();

@@ -1,39 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   box-sizing: border-box;
+  min-height: 100vh;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-body {
-  min-height: 100vh;
-  display: flex;
-}
+
 body * {
   margin: 0 auto;
   padding: 2%;
-  border-radius: 4px;
 }
 
 .header {
-  height: 20%;
+  /* height: 18%; */
   width: 100vw;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 .nav-bar {
   width: 90%;
+  height: 35%;
   margin: 0 auto;
   padding-bottom: 0;
   padding-top: 0;
 }
 h1 {
   margin: 0 auto;
-  height: 50%;
-  padding: 10px;
+  height: 60%;
+  padding: 5px;
 }
 .menu-items {
   list-style: none;
@@ -53,33 +54,53 @@ h1 {
 }
 .main {
   width: 100vw;
-  height: 80%;
+}
+section.contact {
+  height: 70vh;
+}
+section.contact * {
+  margin: 20px;
 }
 .call-to-action {
-  height: 40px;
+  height: 35px;
 }
 .headshot {
   width: 60%;
   padding: 0;
+  margin: 5px;
 }
 .text,
 .screenshots-full-flex {
   margin: 10px auto;
   padding: 0 20px;
 }
-
+.project-heading {
+  padding: 0;
+}
 em {
   padding-left: 0;
 }
 .screenshot {
-  width: 90%;
-  margin: 40px;
+  margin: 10px;
   padding: 0;
 }
-
+.screenshot.landing {
+  width: 100%;
+}
+.screenshot.full {
+  width: 100%;
+  margin-top: 50px;
+}
+.project-landing {
+  padding: 0 60px;
+  margin: 0;
+}
+article.project-landing {
+  width: 70%;
+}
 .screenshot.hero,
 .image-link {
-  width: 100%;
+  width: 80%;
 }
 
 .screenshot-thumbs {
@@ -88,23 +109,42 @@ em {
 
 .link-button {
   width: 150px;
+  height: 45px;
+  padding: 10px;
+  margin: 10px;
+  vertical-align: middle;
   border-radius: 10px;
   border: none;
 }
 
 .footer {
-  height: 20%;
   width: 100vw;
+  padding-bottom: 1%;
   margin: 0 auto;
 }
-.footer-link {
-  padding-top: 0;
-  padding-bottom: 0;
+p.footer-text {
+  padding: 5px;
 }
-
-.logo {
-  height: 45px;
+.hide-footer {
+  display: none;
+}
+.logo-container a {
   padding: 0;
+  margin: 0 10px;
+}
+.contact-page-logo,
+.contact-logo {
+  height: 60px;
+}
+.logo {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+.logo-container {
+  height: 33%;
+  padding: 5px;
+  margin: 5px;
 }
 
 h1:hover,
@@ -119,17 +159,21 @@ button:hover,
 /************** FLEX AND ALIGNMENT **************** */
 
 body {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .headline {
   justify-content: center;
 }
-
+.header {
+  justify-content: space-around;
+}
 .nav-bar,
 .text,
 .screenshots-full-flex {
@@ -143,6 +187,11 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+section.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .screenshot-thumbs-flex {
   display: flex;
   flex-direction: row;
@@ -153,6 +202,11 @@ body {
 .footer {
   justify-content: center;
   text-align: center;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*********** MEDIA QUERIES **********************/
@@ -214,15 +268,13 @@ body {
     width: 180px;
     height: 50px;
   }
-  body {
-    min-height: 100vh;
-  }
 
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: fixed;
+
     left: 0;
     bottom: 0;
     height: 35vh;
@@ -233,9 +285,5 @@ body {
     height: 60px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .logo-container {
-    display: flex;
-    flex-direction: row;
   }
 }
