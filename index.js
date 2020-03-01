@@ -187,6 +187,7 @@ function renderFullScreenshots() {
 function handleBannerClick() {
   $(".header").on("click", "h1", event => {
     event.preventDefault();
+
     $(".js-about-link").removeClass("menu-focus");
     $(".js-projects-link").removeClass("menu-focus");
     $(".js-contact-link").removeClass("menu-focus");
@@ -194,7 +195,15 @@ function handleBannerClick() {
     renderLanding();
   });
 }
+function accessibleBannerClick() {
+  $(".header").on("keypress", "#home-page-link", event => {
+    event.preventDefault();
 
+    if (event.which == 13) {
+      renderLanding();
+    }
+  });
+}
 function handleAboutClick() {
   $(".js-about-link").click(function(event) {
     event.preventDefault();
@@ -261,6 +270,7 @@ function projectDetailsLink() {
 
 renderLanding();
 handleBannerClick();
+accessibleBannerClick();
 handleAboutClick();
 handleProjectsClick();
 handleContactClick();

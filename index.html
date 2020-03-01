@@ -29,29 +29,28 @@
   </head>
   <body>
     <header class="header">
-      <h1>Amy Pepper</h1>
+      <h1 id="home-page-link" tabindex="0">Amy Pepper</h1>
       <nav class="nav-bar">
         <ul class="menu-items">
-          <li class="js-about-link">About</li>
-          <li class="js-projects-link">Projects</li>
-          <li class="js-contact-link hide-li">Contact</li>
+          <li tabindex="0" class="js-about-link">About</li>
+          <li tabindex="0" class="js-projects-link">Projects</li>
+          <li tabindex="0" class="js-contact-link hide-li">Contact</li>
         </ul>
       </nav>
     </header>
     <main class="main js-main"></main>
     <footer class="footer">
-      <p class="footer-text">
+      <p role="heading" class="footer-text">
         Contact Me
       </p>
-      <p class="footer-link">
-        Email:
-        <a
-          class="footer-link"
-          target="_blank"
-          href="mailto:amycarlsonpepper@gmail.com"
-          >amycarlsonpepper@gmail.com</a
-        >
-      </p>
+      <a
+        class="footer-link"
+        target="_blank"
+        href="mailto:amycarlsonpepper@gmail.com"
+      >
+        Email: amycarlsonpepper@gmail.com</a
+      >
+
       <div class="logo-container">
         <a href="https://www.linkedin.com/in/amycarlsonpepper" target="_blank"
           ><img

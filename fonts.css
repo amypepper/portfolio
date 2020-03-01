@@ -18,7 +18,21 @@ h2 {
   line-height: 120%;
   font-family: "Philosopher", sans-serif;
 }
-
+h2.contact {
+  font-size: 2.5rem;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 900;
+}
+h2.project-heading {
+  font-size: 1.4rem;
+}
+.project-landing p {
+  font-size: 1.1rem;
+  line-height: 130%;
+}
+.headline p {
+  font-size: 1.1rem;
+}
 .headline,
 article,
 .image-link {
@@ -34,17 +48,14 @@ article,
 .image-link {
   font-size: 1.25rem;
 }
-h2.contact {
-  font-size: 2.5rem;
-  font-family: "Philosopher", sans-serif;
-  font-weight: 900;
-}
+
 .text {
-  line-height: 150%;
+  line-height: 130%;
   font-size: 1.25rem;
 }
+
 .contact {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   font-family: "Muli", sans-serif;
 }
@@ -55,11 +66,9 @@ em {
 }
 span.emphasize {
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
-.quiz-app-link {
-  font-size: 0.75rem;
-}
+
 
 .footer-text {
   font-family: "Philosopher", sans-serif;
@@ -82,7 +91,7 @@ span.emphasize {
   .headline p {
     font-size: 1.5rem;
   }
-  .headline span {
+  span.emphasize {
     font-size: 1.75rem;
   }
   .call-to-action {

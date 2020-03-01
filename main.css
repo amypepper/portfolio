@@ -20,6 +20,7 @@ body * {
 
 .header {
   width: 100vw;
+  height: 20vh;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -27,7 +28,7 @@ body * {
 
 h1 {
   margin: 0 auto;
-  height: 55%;
+  height: 65%;
   padding: 5px;
 }
 .nav-bar {
@@ -55,18 +56,23 @@ h1 {
 }
 main {
   width: 100vw;
+  border: solid 2px blue;
+}
+h2.contact {
+  margin: 20px 0;
+}
+section.contact {
+  width: 95vw;
+  height: 75vh;
+  margin: 0;
+  padding: 0;
+  border: solid 2px red;
+}
+section.contact * {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/* section.contact {
-  height: 70vh;
-  width: 100%;
-} */
-section.contact * {
-  margin: 20px;
-}
-.call-to-action {
-  height: 35px;
-}
 .headshot {
   width: 60%;
   padding: 0;
@@ -89,14 +95,18 @@ em {
 }
 .screenshot.landing {
   width: 100%;
+  margin: 0;
 }
 .screenshot.full {
   width: 100%;
   margin-top: 50px;
 }
 .project-landing {
-  padding: 0 60px;
+  padding: 0;
   margin: 0;
+}
+section.project-landing {
+  margin: 10px 0;
 }
 article.project-landing {
   width: 70%;
@@ -111,10 +121,10 @@ article.project-landing {
 }
 
 .link-button {
-  width: 150px;
-  height: 55px;
-  padding: 10px;
-  margin: 10px;
+  width: 200px;
+  height: 50px;
+  padding: 13px;
+  margin: 10px 0;
   vertical-align: middle;
   border-radius: 10px;
   border: none;
@@ -122,11 +132,13 @@ article.project-landing {
 
 .footer {
   width: 100vw;
-  padding-bottom: 1%;
+  padding: 5px 0;
   margin: 0 auto;
 }
-p.footer-text {
+p.footer-text,
+a.footer-link {
   padding: 5px;
+  height: 50px;
 }
 .hide-footer {
   display: none;
@@ -145,11 +157,10 @@ p.footer-text {
   margin: 0;
 }
 .logo-container {
-  height: 33%;
+  height: 55px;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
 }
-
 h1:hover,
 .image-link:hover,
 .footer-link:hover,
@@ -166,7 +177,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.main {
+.main,
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +189,7 @@ body {
 .header {
   justify-content: space-around;
 }
-.nav-bar,
+
 .text,
 .screenshots-full-flex {
   display: flex;
@@ -189,13 +201,13 @@ body {
   display: flex;
   flex-direction: row;
   vertical-align: middle;
-  /* align-items: flex-start; */
+  align-items: center;
   justify-content: space-around;
 }
 section.contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .screenshot-thumbs-flex {
   display: flex;
@@ -264,11 +276,6 @@ section.contact {
     margin-right: 0;
     min-height: 100vh;
     justify-content: center;
-  }
-
-  .call-to-action {
-    width: 180px;
-    height: 50px;
   }
 
   .footer {

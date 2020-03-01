@@ -7,9 +7,6 @@ h1 {
 .nav-bar {
   color: #918b79;
 }
-li.menu-focus {
-  color: #728f64;
-}
 .main,
 body {
   background-color: #918b79;
@@ -19,8 +16,7 @@ body {
   color: #1a0703;
 }
 
-.link-button,
-.call-to-action {
+.link-button {
   color: white;
   background-color: #55251d;
 }
@@ -39,9 +35,15 @@ body {
 .link {
   color: #1a0703;
 }
+
+/*********** PSEUDO-CLASSES ****************/
+.image-link:focus,
 .image-link:hover {
   color: #55251d;
 }
+h1:focus,
+h1:hover,
+.footer-link:focus,
 .footer-link:hover {
   color: #728f64;
 }
@@ -49,3 +51,9 @@ body {
 .email-link:hover {
   color: white;
 }
+
+li.menu-focus,
+.menu-items:focus {
+  color: #728f64;
+}
+.logo: focus, button: focus;
