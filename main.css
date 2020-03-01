@@ -5,6 +5,7 @@ html,
 body {
   box-sizing: border-box;
   min-height: 100vh;
+  width: 100vw;
 }
 *,
 *:before,
@@ -18,43 +19,41 @@ body * {
 }
 
 .header {
-  /* height: 18%; */
   width: 100vw;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
-.nav-bar {
-  width: 90%;
-  height: 35%;
-  margin: 0 auto;
-  padding-bottom: 0;
-  padding-top: 0;
-}
+
 h1 {
   margin: 0 auto;
-  height: 60%;
+  height: 55%;
   padding: 5px;
+}
+.nav-bar {
+  width: 100%;
+  height: 45%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 .menu-items {
   list-style: none;
   height: 50px;
   width: 100%;
   margin: 0;
-  padding-bottom: 0;
-  padding-top: 5px;
+  padding: 5px 0;
 }
 .menu-items li {
-  padding: 0 20px;
+  padding: 0 10px;
+  height: 50px;
+  margin: 0;
 }
 
 .main,
 .headline.text {
   margin: 0 auto;
 }
-.main {
-  width: 100vw;
-}
+
 section.contact {
   height: 70vh;
   width: 100%;
@@ -185,7 +184,9 @@ body {
 }
 .menu-items {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  vertical-align: middle;
+  /* align-items: flex-start; */
   justify-content: space-around;
 }
 section.contact {
@@ -220,9 +221,6 @@ section.contact {
     width: 100%;
     text-align: left;
     align-self: baseline;
-  }
-  .main {
-    width: 100vw;
   }
 }
 
