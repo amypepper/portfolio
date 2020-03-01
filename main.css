@@ -57,10 +57,10 @@ main {
   width: 100vw;
 }
 
-section.contact {
+/* section.contact {
   height: 70vh;
   width: 100%;
-}
+} */
 section.contact * {
   margin: 20px;
 }
