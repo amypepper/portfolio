@@ -57,6 +57,7 @@ h1 {
 }
 section.contact {
   height: 70vh;
+  width: 100%;
 }
 section.contact * {
   margin: 20px;
@@ -109,7 +110,7 @@ article.project-landing {
 
 .link-button {
   width: 150px;
-  height: 45px;
+  height: 55px;
   padding: 10px;
   margin: 10px;
   vertical-align: middle;
@@ -137,7 +138,7 @@ p.footer-text {
   height: 60px;
 }
 .logo {
-  height: 40px;
+  height: 44px;
   padding: 0;
   margin: 0;
 }
@@ -282,7 +283,7 @@ section.contact {
     border-radius: 0;
   }
   .logo {
-    height: 60px;
+    height: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
