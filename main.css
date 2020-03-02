@@ -8,7 +8,7 @@ html {
 html,
 body {
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 *,
@@ -24,6 +24,7 @@ body * {
 .main,
 .headline.text {
   margin: 0 auto;
+  padding: 10px;
 }
 .nav-link {
   text-decoration: none;
@@ -31,78 +32,29 @@ body * {
 /*///////////////////////// //////// /////////////////////////*/
 /*////////////////////////// GLOBAL ///////////////////////////*/
 /*///////////////////////// //////// /////////////////////////*/
-
-/*///////////////////////// //////// /////////////////////////*/
-/*////////////////////////// HEADER ///////////////////////////*/
-/*///////////////////////// //////// /////////////////////////*/
-
-.header {
-  border: solid 2px rebeccapurple;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  width: 100vw;
-  height: 22%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 10px;
 }
-.name-logo {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.name-logo,
-a.name-logo-link {
-  height: 60px;
-  width: 100%;
-}
-.name-logo-link {
-  border: solid 2px gold;
-  margin: 5px 0;
-}
-
-.nav-bar {
-  width: 100%;
-  min-height: 50px;
-  margin: 0;
-  padding: 0;
-  margin: 5px 0;
-}
-.menu-items {
-  list-style: none;
-  height: 50px;
-  width: 100%;
-  margin: 0;
-  padding: 5px 0;
-}
-.menu-items li {
-  padding: 0 10px;
-  height: 50px;
-  margin: 0;
-}
-.nav-link {
-  border: solid 2px green;
-  height: 50px;
-}
-
-/*///////////////////////// //////// /////////////////////////*/
-/*////////////////////////// FOOTER ///////////////////////////*/
-/*///////////////////////// //////// /////////////////////////*/
-
 .main {
   width: 98vw;
   border: solid 2px blue;
+}
+.nav-link {
+  border: solid 2px green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0;
 }
 h2.contact {
   margin: 20px 0;
 }
 section.contact {
   width: 95vw;
-  height: 75vh;
+  /* height: 75vh; */
   margin: 0;
   padding: 0;
   border: solid 2px red;
@@ -169,37 +121,6 @@ article.project-landing {
   border: none;
 }
 
-.footer {
-  width: 100vw;
-  padding: 5px 0;
-  margin: 0 auto;
-}
-p.footer-text,
-a.footer-link {
-  padding: 5px;
-  height: 50px;
-}
-.hide-footer {
-  display: none;
-}
-.logo-container a {
-  padding: 0;
-  margin: 0 10px;
-}
-.contact-page-logo,
-.contact-logo {
-  height: 60px;
-}
-.logo {
-  height: 44px;
-  padding: 0;
-  margin: 0;
-}
-.logo-container {
-  height: 55px;
-  padding: 5px;
-  margin: 10px;
-}
 h1:hover,
 .image-link:hover,
 .footer-link:hover,
@@ -209,21 +130,111 @@ button:hover,
   cursor: pointer;
 }
 
-/************** FLEX AND ALIGNMENT **************** */
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// HEADER ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
 
-body {
+.header {
+  border: solid 2px rebeccapurple;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  width: 100vw;
+  height: 19%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 6px;
 }
+.name-logo-link,
+.name-logo {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-logo-link {
+  border: solid 2px gold;
+  padding: 5px;
+}
+
+.nav-bar {
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  padding: 5px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.menu-items li {
+  padding: 0 10px;
+  margin: 0;
+}
+
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// FOOTER ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 28%;
+  padding: 10px;
+  margin: 0;
+}
+
+.footer-link,
+.footer-text {
+  padding: 5px;
+  border: solid 2px yellowgreen;
+}
+.hide-footer {
+  display: none;
+}
+.contact-page-logo,
+.contact-logo {
+  height: 60px;
+}
+.github-logo,
+.linkedin-logo {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+.logo-container {
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/************** FLEX AND ALIGNMENT **************** */
+
 .main,
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.headline,
-.header {
+.headline {
   justify-content: center;
 }
 
@@ -234,13 +245,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.menu-items {
-  display: flex;
-  flex-direction: row;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: space-around;
-}
+
 section.contact {
   display: flex;
   flex-direction: column;
@@ -251,16 +256,6 @@ section.contact {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.footer {
-  justify-content: center;
-  text-align: center;
-}
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 /*********** MEDIA QUERIES **********************/
@@ -327,7 +322,8 @@ section.contact {
     width: 40%;
     border-radius: 0;
   }
-  .logo {
+  .github-logo,
+  .linkedin-logo {
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
