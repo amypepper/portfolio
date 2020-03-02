@@ -1,3 +1,7 @@
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// RESET ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,30 +16,61 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
 body * {
   margin: 0 auto;
   padding: 2%;
 }
 
+.main,
+.headline.text {
+  margin: 0 auto;
+}
+.nav-link {
+  text-decoration: none;
+}
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// GLOBAL ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// HEADER ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
 .header {
+  border: solid 2px rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 100vw;
-  height: 20vh;
+  height: 22%;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 10px;
+}
+.name-logo {
+  margin: 0;
   padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.name-logo,
+a.name-logo-link {
+  height: 60px;
+  width: 100%;
+}
+.name-logo-link {
+  border: solid 2px gold;
+  margin: 5px 0;
 }
 
-h1 {
-  margin: 0 auto;
-  height: 65%;
-  padding: 5px;
-}
 .nav-bar {
   width: 100%;
   min-height: 50px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0;
+  margin: 5px 0;
 }
 .menu-items {
   list-style: none;
@@ -49,13 +84,17 @@ h1 {
   height: 50px;
   margin: 0;
 }
-
-.main,
-.headline.text {
-  margin: 0 auto;
+.nav-link {
+  border: solid 2px green;
+  height: 50px;
 }
-main {
-  width: 100vw;
+
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// FOOTER ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
+.main {
+  width: 98vw;
   border: solid 2px blue;
 }
 h2.contact {
@@ -183,11 +222,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.headline {
-  justify-content: center;
-}
+.headline,
 .header {
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .text,

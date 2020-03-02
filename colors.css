@@ -12,7 +12,8 @@ body {
   background-color: #918b79;
 }
 
-.text {
+.text,
+.link {
   color: #1a0703;
 }
 
@@ -29,11 +30,9 @@ body {
 }
 
 .footer-text,
-.footer-link {
+.footer-link,
+.nav-link {
   color: white;
-}
-.link {
-  color: #1a0703;
 }
 
 /*********** PSEUDO-CLASSES ****************/
