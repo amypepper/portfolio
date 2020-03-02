@@ -12,8 +12,7 @@ body {
   background-color: #918b79;
 }
 
-.text,
-.link {
+.text {
   color: #1a0703;
 }
 
@@ -34,23 +33,23 @@ body {
 }
 
 /*********** PSEUDO-CLASSES ****************/
-.image-link:focus,
-.image-link:hover {
+.screenshots-link:focus,
+.screenshots-link:hover {
   color: #55251d;
 }
+li.menu-focus,
+.menu-items:focus,
+.menu-items:focus,
 h1:focus,
 h1:hover,
 .footer-link:focus,
-.footer-link:hover {
+.footer-link:hover,
+button:focus,
+button:hover {
   color: #728f64;
 }
 
-.email-link:hover {
+.email-link:hover,
+.email-link:focus {
   color: white;
 }
-
-li.menu-focus,
-.menu-items:focus {
-  color: #728f64;
-}
-.logo: focus, button: focus;

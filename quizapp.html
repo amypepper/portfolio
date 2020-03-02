@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="This is the portfolio of Amy Pepper's web development work"
-    />
+    <meta name="description" content="Amy Pepper's quiz app project" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
@@ -25,7 +22,7 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="colors.css" />
-    <title>Amy Pepper's Portfolio</title>
+    <title>Amy Pepper's Languages of the World Quiz App</title>
   </head>
   <body>
     <header class="header">
@@ -47,22 +44,69 @@
       </nav>
     </header>
     <main class="main js-main">
-      <section class="text headline">
-        <p>
-          My name's Amy and I am a<span class="emphasize"
-            >full stack developer</span
-          >and self-professed Francophile.
+      <section class="text quiz-app-text">
+        <img
+          class="screenshot hero"
+          src="Images/Compressed/Quiz-app-1.png"
+          alt="screenshot of a quiz about the languages of the world"
+        />
+        <p class="quiz-app-text"><em>Title:</em> Languages of the World Quiz</p>
+        <p class="quiz-app-text">
+          <em>Description:</em> This is a 6-question multiple-choice quiz about
+          human languages from around the world. Users choose from 4 answer
+          choices, move through the questions one at a time, and then receive
+          immediate feedback about their answer.
         </p>
-        <p>
-          <span class="emphasize">Accessibility</span>and<span class="emphasize"
-            >UX</span
-          >matter a lot to me, and I'm all about the<span class="emphasize"
-            >details.</span
-          >
+
+        <p class="quiz-app-text">
+          Users are presented with a final score, a link to the Ethnologue
+          website to learn more, and an opportunity to retake the quiz.
         </p>
-        <a class="link-button js-call-to-action" href="projects.html">
-          See my work
-        </a>
+        <p class="quiz-app-text">
+          <em>Technologies:</em> HTML5, CSS3, Javascript, and jQuery.
+        </p>
+
+        <a
+          class="link-button"
+          href="https://amypepper.github.io/quiz-app/"
+          target="_blank"
+          >Live App</a
+        >
+
+        <a
+          class="link-button"
+          href="https://github.com/amypepper/quiz-app"
+          target="_blank"
+          >Repo</a
+        >
+
+        <a class="link-button screenshots-link" href="quizapp-screenshots.html"
+          >See Full-Size Images</a
+        >
+        <div class="screenshot-thumbs-flex">
+          <img
+            class="screenshot-thumbs"
+            src="Images/Compressed/Thumbs/Quiz-app-thumb-correct.png"
+            alt="thumbnail of correct answer display"
+          />
+          <img
+            class="screenshot-thumbs"
+            src="Images/Compressed/Thumbs/Quiz-app-thumb-user-error.png"
+            alt="thumbnail of user error notification"
+          />
+        </div>
+        <div class="screenshot-thumbs-flex">
+          <img
+            class="screenshot-thumbs"
+            src="Images/Compressed/Thumbs/Quiz-app-thumb-incorrect.png"
+            alt="thumbnail of incorrect answer display"
+          />
+          <img
+            class="screenshot-thumbs"
+            src="Images/Compressed/Thumbs/Quiz-app-thumb-final.png"
+            alt="thumbnail of final score display"
+          />
+        </div>
       </section>
     </main>
     <footer class="footer">

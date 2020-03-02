@@ -72,7 +72,7 @@ section.contact * {
 .text,
 .screenshots-full-flex {
   margin: 10px auto;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .project-heading {
   padding: 0;
@@ -92,6 +92,9 @@ em {
   width: 100%;
   margin-top: 50px;
 }
+.screenshot.full.top {
+  margin-top: 10px;
+}
 .project-landing {
   padding: 0;
   margin: 0;
@@ -102,19 +105,24 @@ section.project-landing {
 article.project-landing {
   width: 70%;
 }
-.screenshot.hero,
-.image-link {
-  width: 80%;
-}
 
 .screenshot-thumbs {
   width: 40%;
 }
 
+.screenshot.hero,
+.quiz-app-text {
+  margin: 5px 0;
+  width: 95%;
+  line-height: 150%;
+}
+p.quiz-app-text {
+  margin-bottom: 10px;
+}
 .link-button {
   width: 200px;
   height: 50px;
-  padding: 13px;
+  padding: 10px;
   margin: 10px 0;
   vertical-align: middle;
   border-radius: 10px;
@@ -122,7 +130,7 @@ article.project-landing {
 }
 
 h1:hover,
-.image-link:hover,
+.screenshots-link:hover,
 .footer-link:hover,
 .logo:hover,
 button:hover,
@@ -200,10 +208,14 @@ button:hover,
   margin: 0;
 }
 
-.footer-link,
 .footer-text {
   padding: 5px;
   border: solid 2px yellowgreen;
+}
+.footer-link {
+  border: solid 2px yellowgreen;
+  padding: 12px 5px;
+  height: 50px;
 }
 .hide-footer {
   display: none;

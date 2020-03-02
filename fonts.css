@@ -35,18 +35,20 @@ h2.project-heading {
 }
 .headline,
 article,
-.image-link {
+.screenshots-link {
   text-align: center;
 }
-.link,
-.link-button,
-.footer-link {
+.link-button {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  font-size: 1.05rem;
 }
-.image-link {
-  font-size: 1.25rem;
+.screenshots-link,
+.footer-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .text {
@@ -70,7 +72,7 @@ span.emphasize {
 }
 .footer-text {
   font-family: "Philosopher", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 520px) {
@@ -82,22 +84,23 @@ span.emphasize {
     font-size: 1.7rem;
   }
 
-@media screen and (min-width: 900px) {
-  .menu-items li {
-    font-size: 1.5rem;
+  @media screen and (min-width: 900px) {
+    .menu-items li {
+      font-size: 1.5rem;
+    }
+    .headline p {
+      font-size: 1.5rem;
+    }
+    span.emphasize {
+      font-size: 1.75rem;
+    }
+    .call-to-action {
+      font-size: 1.25rem;
+    }
   }
-  .headline p {
-    font-size: 1.5rem;
-  }
-  span.emphasize {
+
+  li.menu-focus {
+    font-weight: 900;
     font-size: 1.75rem;
   }
-  .call-to-action {
-    font-size: 1.25rem;
-  }
-}
-
-li.menu-focus {
-  font-weight: 900;
-  font-size: 1.75rem;
 }
