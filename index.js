@@ -1,31 +1,5 @@
 "use strict";
 
-const quizAppScreenshots = `<div
-        class="screenshots-full-flex"
-        role="figure"
-      >
-        <img
-          class="screenshot full"
-          src="Images/Compressed/Quiz-app-correct.png"
-          alt="screenshot of correct answer display"
-        />
-        <img
-          class="screenshot full"
-          src="Images/Compressed/Quiz-app-user-error.png"
-          alt="screenshot of user error notification"
-        />
-        <img
-          class="screenshot full"
-          src="Images/Compressed/Quiz-app-incorrect.png"
-          alt="screenshot of incorrect answer display"
-        />
-        <img
-          class="screenshot full"
-          src="Images/Compressed/Quiz-app-final.png"
-          alt="screenshot of final score display"
-        />
-      </div>`;
-
 // ******************RENDER FUNCTIONS**********************
 
 // function renderLanding() {
@@ -41,7 +15,7 @@ const quizAppScreenshots = `<div
 // }
 // function renderContact() {
 //   $(".js-main").html(contact);
-//   $(".footer").addClass("hide-footer");
+//
 // }
 // function renderQuizAppProject() {
 //   $(".js-main").html(quizApp);
@@ -85,15 +59,21 @@ const quizAppScreenshots = `<div
 //   });
 // }
 
-// function handleContactClick() {
-//   $(".js-contact-link").click(function(event) {
-//     event.preventDefault();
-//     $(".js-contact-link").addClass("menu-focus");
-//     $(".js-projects-link").removeClass("menu-focus");
-//     $(".js-about-link").removeClass("menu-focus");
-//     renderContact();
-//   });
-// }
+function handleContactClick() {
+  $(".js-contact-link").click(function(event) {
+    event.preventDefault();
+    var element = document.getElementById("contact-me");
+
+    element.scrollIntoView();
+
+    // $(".footer").addClass("hide-footer");
+
+    // $(".js-contact-link").addClass("menu-focus");
+    // $(".js-projects-link").removeClass("menu-focus");
+    // $(".js-about-link").removeClass("menu-focus");
+    // renderContact();
+  });
+}
 
 // function quizAppFullScreenshotsLink() {
 //   $(".js-main").on("click", ".image-link", function(event) {
@@ -129,3 +109,4 @@ const quizAppScreenshots = `<div
 // callToActionLink();
 // projectDetailsLink();
 // quizAppFullScreenshotsLink();
+handleContactClick();
