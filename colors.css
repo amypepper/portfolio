@@ -33,10 +33,7 @@ body {
 }
 
 /*********** PSEUDO-CLASSES ****************/
-.screenshots-link:focus,
-.screenshots-link:hover {
-  color: #55251d;
-}
+
 li.menu-focus,
 .menu-items:focus,
 .menu-items:focus,
@@ -44,12 +41,18 @@ h1:focus,
 h1:hover,
 .footer-link:focus,
 .footer-link:hover,
-button:focus,
-button:hover {
+.link-button:focus,
+.link-button:hover,
+.screenshots-link:focus,
+.screenshots-link:hover {
   color: #728f64;
 }
 
 .email-link:hover,
 .email-link:focus {
   color: white;
+}
+.nav-link.linkedin:focus,
+.nav-link.github:hover {
+  background-color: #728f64;
 }
