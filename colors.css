@@ -1,7 +1,7 @@
 .header {
   background: #1a0703;
 }
-h1 {
+.name-logo-link {
   color: white;
 }
 .nav-bar {
@@ -34,25 +34,23 @@ body {
 
 /*********** PSEUDO-CLASSES ****************/
 
-li.menu-focus,
-.menu-items:focus,
-.menu-items:focus,
-h1:focus,
+li:hover,
+.nav-link:focus,
+.name-logo-link > h1:focus,
 h1:hover,
-.footer-link:focus,
 .footer-link:hover,
-.link-button:focus,
 .link-button:hover,
-.screenshots-link:focus,
 .screenshots-link:hover {
   color: #728f64;
+  font-weight: bolder;
+  font-style: italic;
 }
 
+img.linkedin-logo:hover,
+img.github-logo:hover {
+  background-color: #728f64;
+}
 .email-link:hover,
 .email-link:focus {
   color: white;
-}
-.nav-link.linkedin:focus,
-.nav-link.github:hover {
-  background-color: #728f64;
 }

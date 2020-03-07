@@ -48,11 +48,11 @@ article,
 }
 
 .text {
-  line-height: 130%;
+  line-height: 150%;
   font-size: 1.1rem;
 }
 
-.contact {
+.contact-page {
   font-size: 1rem;
   font-weight: 700;
   font-family: "Muli", sans-serif;
