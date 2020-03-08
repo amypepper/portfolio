@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -62,7 +63,6 @@ body,
 }
 .main {
   width: 98vw;
-  border: solid 2px blue;
 }
 .nav-link {
   display: flex;
