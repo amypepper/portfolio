@@ -1,9 +1,7 @@
 .header {
   background: #1a0703;
 }
-.name-logo-link {
-  color: white;
-}
+
 .nav-bar {
   color: #918b79;
 }
@@ -28,7 +26,8 @@ body {
 
 .footer-text,
 .footer-link,
-.nav-link {
+.nav-link,
+.name-logo-link {
   color: white;
 }
 
@@ -39,7 +38,9 @@ li:hover,
 .name-logo-link > h1:focus,
 h1:hover,
 .footer-link:hover,
+.footer-link:focus,
 .link-button:hover,
+.link-button:focus,
 .screenshots-link:hover {
   color: #728f64;
   font-weight: bolder;
@@ -47,10 +48,8 @@ h1:hover,
 }
 
 img.linkedin-logo:hover,
-img.github-logo:hover {
+a.logo-footer-link:focus,
+img.github-logo:hover,
+img.github-logo:focus {
   background-color: #728f64;
-}
-.email-link:hover,
-.email-link:focus {
-  color: white;
 }

@@ -182,17 +182,15 @@ li:hover {
 
 .footer {
   width: 100vw;
-  /* height: 28%; */
+
   padding: 10px;
   margin: 0;
 }
 
 .footer-text {
   padding: 5px;
-  border: solid 2px yellowgreen;
 }
 .footer-link {
-  /* border: solid 2px yellowgreen; */
   padding: 12px 5px;
   height: 50px;
 }
@@ -216,6 +214,36 @@ li:hover {
 /*///////////////////////// //////// /////////////////////////*/
 /*////////////////////////// MAIN //////////////////////////*/
 /*///////////////////////// //////// /////////////////////////*/
+
+.hidden {
+  display: none;
+}
+
+.footer-link:hover span,
+.footer-link:focus span {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 80px;
+  top: -70px;
+  left: 200px;
+  border: 1px solid #728f64;
+  background-color: white;
+  color: #55251d;
+  text-align: center;
+}
+.nav-link:focus span,
+.nav-link:hover span,
+.link-button.new-tab:hover span,
+.link-button.new-tab:focus span {
+  display: block;
+  position: relative;
+  width: 80px;
+  border: 1px solid #728f64;
+  background-color: white;
+  color: #55251d;
+  text-align: center;
+}
 
 /*///////////////////////// //////// /////////////////////////*/
 /*////////////////////////// IMAGES //////////////////////////*/

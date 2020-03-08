@@ -52,11 +52,6 @@ article,
   font-size: 1.1rem;
 }
 
-.contact-page {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Muli", sans-serif;
-}
 em {
   font-weight: bold;
   font-family: "Philosopher", sans-serif;
@@ -80,24 +75,22 @@ span.emphasize {
     font-size: 1.7rem;
   }
 }
-  @media screen and (min-width: 900px) {
-    .menu-items li {
-      font-size: 1.5rem;
-    }
-    .headline p {
-      font-size: 1.5rem;
-    }
-    span.emphasize {
-      font-size: 1.75rem;
-    }
-    .call-to-action {
-      font-size: 1.25rem;
-    }
-    .name-logo {
-      font-size: 3rem;
-    }
+@media screen and (min-width: 900px) {
+  .menu-items li {
+    font-size: 1.5rem;
   }
-
+  .headline p {
+    font-size: 1.5rem;
+  }
+  span.emphasize {
+    font-size: 1.75rem;
+  }
+  .call-to-action {
+    font-size: 1.25rem;
+  }
+  .name-logo {
+    font-size: 3rem;
+  }
   li.menu-focus {
     font-weight: 900;
     font-size: 1.75rem;
