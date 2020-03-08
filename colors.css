@@ -33,7 +33,8 @@ body {
 
 /*********** PSEUDO-CLASSES ****************/
 
-li:hover,
+a:hover,
+a:focus,
 .nav-link:focus,
 .name-logo-link > h1:focus,
 h1:hover,
