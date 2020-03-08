@@ -2,7 +2,7 @@ body * {
   font-family: "Muli", sans-serif;
 }
 
-.nav-bar {
+.nav-bar * {
   font-size: 1.3rem;
   font-family: "Muli", sans-serif;
   font-weight: 600;
@@ -14,13 +14,10 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  line-height: 120%;
-  font-family: "Philosopher", sans-serif;
-}
-
 h2.project-title {
   font-size: 1.25rem;
+  font-family: "Philosopher", sans-serif;
+  line-height: 120%;
 }
 .project-landing p {
   font-size: 1.1rem;
@@ -52,11 +49,6 @@ article,
   font-size: 1.1rem;
 }
 
-.contact-page {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Muli", sans-serif;
-}
 em {
   font-weight: bold;
   font-family: "Philosopher", sans-serif;
@@ -70,7 +62,10 @@ span.emphasize {
   font-family: "Philosopher", sans-serif;
   font-size: 1.25rem;
 }
-
+span {
+  font-size: 1rem;
+  font-weight: bold;
+}
 @media screen and (min-width: 520px) {
   .headline p {
     font-size: 1.5rem;
@@ -80,26 +75,20 @@ span.emphasize {
     font-size: 1.7rem;
   }
 }
-  @media screen and (min-width: 900px) {
-    .menu-items li {
-      font-size: 1.5rem;
-    }
-    .headline p {
-      font-size: 1.5rem;
-    }
-    span.emphasize {
-      font-size: 1.75rem;
-    }
-    .call-to-action {
-      font-size: 1.25rem;
-    }
-    .name-logo {
-      font-size: 3rem;
-    }
+@media screen and (min-width: 900px) {
+  .nav-bar h2 {
+    font-size: 2rem;
   }
-
-  li.menu-focus {
-    font-weight: 900;
+  .headline p {
+    font-size: 1.5rem;
+  }
+  span.emphasize {
     font-size: 1.75rem;
+  }
+  .call-to-action {
+    font-size: 1.25rem;
+  }
+  .name-logo {
+    font-size: 3rem;
   }
 }

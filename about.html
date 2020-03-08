@@ -33,21 +33,16 @@
         ><h1 class="name-logo">Amy Pepper</h1></a
       >
       <nav class="nav-bar">
-        <ul class="menu-items">
-          <a class="nav-link about" href="about.html"
-            ><li class="js-about-link">About</li></a
-          >
-          <a class="nav-link projects " href="projects.html"
-            ><li class="js-projects-link">Projects</li></a
-          >
-          <a class="nav-link contact-nav hide-link" href="#contact-me"
-            ><li class="js-contact-link ">Contact</li></a
-          >
-        </ul>
+        <a class="nav-link about" href="about.html"><h2>About</h2></a>
+        <a class="nav-link projects" href="projects.html"><h2>Projects</h2></a>
+        <a class="nav-link contact-nav hide-link" href="#contact-me"
+          ><h2 class="js-contact-link ">Contact</h2></a
+        >
       </nav>
     </header>
     <main class="main js-main">
       <section class="text">
+        <h3 class="hidden">About Me</h3>
         <p>
           I love web development because I get so much satisfaction from
           building something with my own two hands (well, a keyboard too...).
@@ -63,7 +58,7 @@
         <img
           class="headshot"
           src="Images/Compressed/Headshot.jpg"
-          alt="headshot of Amy Pepper wearing glasses and a curly asymmetrical haircut"
+          alt="headshot of Amy Pepper wearing glasses and a dark brown curly asymmetrical haircut"
         />
         <p>
           I also enjoy corralling ideas and information into a structure that
@@ -77,28 +72,30 @@
       <p role="heading" class="footer-text">
         Contact Me
       </p>
+
       <a
         class="footer-link"
         target="_blank"
         href="mailto:amycarlsonpepper@gmail.com"
       >
-        Email: amycarlsonpepper@gmail.com</a
+        Email: amycarlsonpepper@gmail.com
+        <span class="hidden nav-link">Opens in new tab</span></a
       >
 
       <div role="figure" class="logo-container">
         <a
-          class="nav-link logo-footer-link"
+          class="nav-link"
           href="https://www.linkedin.com/in/amycarlsonpepper"
           target="_blank"
+          ><span class="hidden nav-link">Opens in new tab</span
           ><img
             class="linkedin-logo"
             src="Images/Compressed/LI-In-Bug.png"
             alt="LinkedIn logo that links to Amy's LinkedIn profile (opens in new tab)"
         /></a>
-        <a
-          class="nav-link logo-footer-link"
-          href="https://github.com/amypepper"
-          target="_blank"
+
+        <a class="nav-link" href="https://github.com/amypepper" target="_blank"
+          ><span class="hidden">Opens in new tab</span
           ><img
             class="github-logo"
             src="Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png"
