@@ -1,10 +1,14 @@
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// RESET ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
 html {
   scroll-behavior: smooth;
 }
 html,
 body {
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 *,
@@ -12,95 +16,79 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
 body * {
-  margin: 0 auto;
+  margin: 0 5px;
   padding: 2%;
 }
 
+.nav-link {
+  text-decoration: none;
+}
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// GLOBAL ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+body,
 .header {
-  width: 100vw;
-  height: 20vh;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
-h1 {
-  margin: 0 auto;
-  height: 65%;
-  padding: 5px;
-}
-.nav-bar {
-  width: 100%;
-  min-height: 50px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-.menu-items {
-  list-style: none;
-  height: 50px;
-  width: 100%;
-  margin: 0;
-  padding: 5px 0;
-}
-.menu-items li {
-  padding: 0 10px;
-  height: 50px;
-  margin: 0;
-}
-
 .main,
-.headline.text {
-  margin: 0 auto;
+.project-landing,
+.headline,
+.text,
+.footer,
+.screenshots-full-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-main {
-  width: 100vw;
+.name-logo-link,
+.name-logo,
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshot-thumbs-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main {
+  width: 98vw;
   border: solid 2px blue;
 }
-h2.contact {
-  margin: 20px 0;
-}
-section.contact {
-  width: 95vw;
-  height: 75vh;
-  margin: 0;
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
   padding: 0;
-  border: solid 2px red;
 }
-section.contact * {
-  margin-left: 0;
-  margin-right: 0;
+.main,
+.headline.text {
+  margin: 5px 0;
+  padding: 10px;
 }
 
-.headshot {
-  width: 60%;
-  padding: 0;
-  margin: 5px;
-}
-.text,
-.screenshots-full-flex {
+.text {
   margin: 10px auto;
-  padding: 0 20px;
+  padding: 0 5px;
 }
-.project-heading {
+.project-title {
   padding: 0;
+  margin: 5px 0;
 }
 em {
   padding-left: 0;
 }
-.screenshot {
-  margin: 10px;
-  padding: 0;
-}
-.screenshot.landing {
-  width: 100%;
-  margin: 0;
-}
-.screenshot.full {
-  width: 100%;
-  margin-top: 50px;
-}
+
 .project-landing {
   padding: 0;
   margin: 0;
@@ -111,119 +99,169 @@ section.project-landing {
 article.project-landing {
   width: 70%;
 }
+
 .screenshot.hero,
-.image-link {
-  width: 80%;
+.quiz-app-text {
+  margin: 5px 0;
+  width: 95%;
+  line-height: 150%;
 }
-
-.screenshot-thumbs {
-  width: 40%;
+p.quiz-app-text {
+  margin-bottom: 10px;
 }
-
 .link-button {
   width: 200px;
   height: 50px;
-  padding: 13px;
+  padding: 10px;
   margin: 10px 0;
   vertical-align: middle;
   border-radius: 10px;
   border: none;
 }
 
+h1:hover,
+.screenshots-link:hover,
+.footer-link:hover,
+.logo:hover,
+button:hover,
+li:hover {
+  cursor: pointer;
+}
+
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// HEADER ///////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
+.header {
+  width: 100vw;
+  flex-basis: 19%;
+  margin: 0;
+  padding: 6px;
+}
+.name-logo-link,
+.name-logo,
+.nav-bar {
+  margin: 0;
+  padding: 5px;
+  min-height: 50px;
+}
+
+.nav-bar h2 {
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-link.about,
+.nav-link.projects,
+.nav-link.contact-nav {
+  padding: 0;
+  margin: 0;
+}
+/* flex grow proportions */
+.name-logo-link,
+.nav-bar,
+.nav-link.about,
+.nav-link.projects,
+.nav-link.contact-nav {
+  width: 100%;
+}
+
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// FOOTER //////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
 .footer {
   width: 100vw;
-  padding: 5px 0;
-  margin: 0 auto;
+
+  padding: 10px;
+  margin: 0;
 }
-p.footer-text,
-a.footer-link {
+
+.footer-text {
   padding: 5px;
+}
+.footer-link {
+  padding: 12px 5px;
   height: 50px;
 }
 .hide-footer {
   display: none;
 }
-.logo-container a {
-  padding: 0;
-  margin: 0 10px;
-}
-.contact-page-logo,
-.contact-logo {
-  height: 60px;
-}
-.logo {
-  height: 44px;
+.github-logo,
+.linkedin-logo {
+  height: 50px;
   padding: 0;
   margin: 0;
 }
 .logo-container {
-  height: 55px;
   padding: 5px;
-  margin: 10px;
-}
-h1:hover,
-.image-link:hover,
-.footer-link:hover,
-.logo:hover,
-button:hover,
-.menu-items li:hover {
-  cursor: pointer;
-}
-
-/************** FLEX AND ALIGNMENT **************** */
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main,
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.headline {
-  justify-content: center;
-}
-.header {
-  justify-content: space-around;
-}
-
-.text,
-.screenshots-full-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.menu-items {
+  margin: 0;
   display: flex;
   flex-direction: row;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: space-around;
-}
-section.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.screenshot-thumbs-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.footer {
-  justify-content: center;
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// MAIN //////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
+.hidden {
+  display: none;
+}
+
+.footer-link:hover span,
+.footer-link:focus span {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 80px;
+  top: -70px;
+  left: 200px;
+  border: 1px solid #728f64;
+  background-color: white;
+  color: #55251d;
   text-align: center;
 }
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.nav-link:focus span,
+.nav-link:hover span,
+.link-button.new-tab:hover span,
+.link-button.new-tab:focus span {
+  display: block;
+  position: relative;
+  width: 80px;
+  border: 1px solid #728f64;
+  background-color: white;
+  color: #55251d;
+  text-align: center;
+}
+
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////////// IMAGES //////////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
+
+.screenshot {
+  margin: 10px;
+  padding: 0;
+  max-width: 600px;
+}
+.screenshot.landing {
+  width: 100%;
+  margin: 5px 0;
+}
+.screenshot.full {
+  width: 100%;
+  margin-top: 50px;
+}
+.screenshot.full.top {
+  margin-top: 10px;
+}
+.screenshot-thumbs {
+  width: 40%;
+}
+.headshot {
+  width: 60%;
+  padding: 0;
+  margin: 5px;
 }
 
 /*********** MEDIA QUERIES **********************/
@@ -236,6 +274,13 @@ section.contact {
     width: 100%;
     text-align: left;
     align-self: baseline;
+  }
+  .nav-link.logo-footer-link {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -251,6 +296,7 @@ section.contact {
     top: 0;
     border-radius: 0;
     padding-bottom: 0;
+    margin: 0;
   }
   h1 {
     height: 25%;
@@ -261,13 +307,11 @@ section.contact {
     flex-direction: column;
     justify-content: center;
   }
-  .menu-items {
-    flex-direction: column;
-  }
-  .menu-items li {
+
+  .nav-bar h2 {
     padding: 30px;
   }
-  .hide-li {
+  .hide-link {
     display: none;
   }
   .main {
@@ -276,8 +320,12 @@ section.contact {
     margin-right: 0;
     min-height: 100vh;
     justify-content: center;
+    padding-left: 0;
   }
-
+  .headline.text {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -289,10 +337,5 @@ section.contact {
     height: 35vh;
     width: 40%;
     border-radius: 0;
-  }
-  .logo {
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }

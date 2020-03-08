@@ -1,9 +1,7 @@
 .header {
   background: #1a0703;
 }
-h1 {
-  color: white;
-}
+
 .nav-bar {
   color: #918b79;
 }
@@ -24,36 +22,35 @@ body {
 .footer {
   background-color: #1a0703;
   color: white;
-  padding: 0.5%;
-  margin: 0;
 }
 
 .footer-text,
-.footer-link {
+.footer-link,
+.nav-link,
+.name-logo-link {
   color: white;
-}
-.link {
-  color: #1a0703;
 }
 
 /*********** PSEUDO-CLASSES ****************/
-.image-link:focus,
-.image-link:hover {
-  color: #55251d;
-}
-h1:focus,
+
+a:hover,
+a:focus,
+.nav-link:focus,
+.name-logo-link > h1:focus,
 h1:hover,
+.footer-link:hover,
 .footer-link:focus,
-.footer-link:hover {
+.link-button:hover,
+.link-button:focus,
+.screenshots-link:hover {
   color: #728f64;
+  font-weight: bolder;
+  font-style: italic;
 }
 
-.email-link:hover {
-  color: white;
+img.linkedin-logo:hover,
+a.logo-footer-link:focus,
+img.github-logo:hover,
+img.github-logo:focus {
+  background-color: #728f64;
 }
-
-li.menu-focus,
-.menu-items:focus {
-  color: #728f64;
-}
-.logo: focus, button: focus;

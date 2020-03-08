@@ -2,29 +2,22 @@ body * {
   font-family: "Muli", sans-serif;
 }
 
-.nav-bar {
-  font-size: 1.5rem;
+.nav-bar * {
+  font-size: 1.3rem;
   font-family: "Muli", sans-serif;
   font-weight: 600;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Philosopher", sans-serif;
   text-align: center;
 }
 
-h2 {
+h2.project-title {
+  font-size: 1.25rem;
+  font-family: "Philosopher", sans-serif;
   line-height: 120%;
-  font-family: "Philosopher", sans-serif;
-}
-h2.contact {
-  font-size: 2.5rem;
-  font-family: "Philosopher", sans-serif;
-  font-weight: 900;
-}
-h2.project-heading {
-  font-size: 1.4rem;
 }
 .project-landing p {
   font-size: 1.1rem;
@@ -35,30 +28,27 @@ h2.project-heading {
 }
 .headline,
 article,
-.image-link {
+.screenshots-link {
   text-align: center;
 }
-.link,
-.link-button,
-.footer-link {
+.link-button {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
+  font-size: 1.05rem;
 }
-.image-link {
-  font-size: 1.25rem;
+.screenshots-link,
+.footer-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .text {
-  line-height: 130%;
-  font-size: 1.25rem;
+  line-height: 150%;
+  font-size: 1.1rem;
 }
 
-.contact {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Muli", sans-serif;
-}
 em {
   font-weight: bold;
   font-family: "Philosopher", sans-serif;
@@ -68,13 +58,14 @@ span.emphasize {
   font-weight: 600;
   font-size: 1.2rem;
 }
-
-
 .footer-text {
   font-family: "Philosopher", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
-
+span {
+  font-size: 1rem;
+  font-weight: bold;
+}
 @media screen and (min-width: 520px) {
   .headline p {
     font-size: 1.5rem;
@@ -83,10 +74,10 @@ span.emphasize {
   span.emphasize {
     font-size: 1.7rem;
   }
-
+}
 @media screen and (min-width: 900px) {
-  .menu-items li {
-    font-size: 1.5rem;
+  .nav-bar h2 {
+    font-size: 2rem;
   }
   .headline p {
     font-size: 1.5rem;
@@ -97,9 +88,7 @@ span.emphasize {
   .call-to-action {
     font-size: 1.25rem;
   }
-}
-
-li.menu-focus {
-  font-weight: 900;
-  font-size: 1.75rem;
+  .name-logo {
+    font-size: 3rem;
+  }
 }
