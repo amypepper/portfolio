@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Projects showing Amy Pepper's web development work"
-    />
+    <meta name="description" content="Amy Pepper's word origins app project" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
@@ -25,7 +22,7 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="colors.css" />
-    <title>Amy Pepper's Portfolio - Projects</title>
+    <title>Amy Pepper's Word Origins App</title>
   </head>
   <body>
     <header class="header">
@@ -33,66 +30,65 @@
         ><h1 class="name-logo">Amy Pepper</h1></a
       >
       <nav class="nav-bar">
-        <a id="about-link" class="nav-link about" href="about.html"
-          ><h2>About</h2></a
-        >
-        <a id="projects-link" class="nav-link projects" href="projects.html"
-          ><h2>Projects</h2></a
-        >
-        <a
-          id="contact-link"
-          class="nav-link contact-nav hide-link"
-          href="#contact-me"
+        <a class="nav-link about" href="about.html"><h2>About</h2></a>
+        <a class="nav-link projects" href="projects.html"><h2>Projects</h2></a>
+        <a class="nav-link contact-nav hide-link" href="#contact-me"
           ><h2 class="js-contact-link ">Contact</h2></a
         >
       </nav>
     </header>
     <main class="main js-main">
-      <section class="text project-landing">
-        <h3 class="project-landing-title">My Web Development Projects</h3>
-        <article class="project-landing">
-          <img
-            class="screenshot landing"
-            src="Images/Compressed/Quiz-app-1.png"
-            alt="screenshot of a quiz about the languages of the world"
-          />
-          <h4 class="project-title">Languages of the World Quiz</h4>
-          <p>
-            An interactive multiple-choice quiz about human languages from
-            around the world.
-          </p>
-          <a
-            class="link-button project-details js-project-details-link"
-            href="quizapp.html"
-          >
-            Project Details
-          </a>
-        </article>
-        <article class="project-landing">
-          <img
-            class="screenshot landing"
-            src="Images/Compressed/Origin-results-screenshot.png"
-            alt="screenshot of an app that allows user to search for the history of an English word"
-          />
-          <h4 class="project-title">
-            Word Origins App - Where'd that Word Come From?
-          </h4>
-          <p>
-            This app allows you to search for any word in English that you would
-            like to learn about, and will show definitions, etymologies,
-            Wikipedia articles, and archived American newspapers with links to
-            learn more.
-          </p>
-          <a
-            class="link-button project-details js-project-details-link"
-            href="word-origins-app.html"
-          >
-            Project Details
-          </a>
-        </article>
+      <section class="text word-origins-text">
+        <h3 class="hidden">
+          Information and Details about my Word Origins App
+        </h3>
+        <img
+          class="screenshot hero"
+          src="Images/Compressed/Landing-page-screenshot.png"
+          alt="screenshot of a search on my word origins app"
+        />
+        <p class="word-origins-text">
+          <em>Title:</em> Where'd that Word Come From?
+        </p>
+        <p class="word-origins-text">
+          <em>Description:</em> This app allows you to search for any word in
+          English that you would like to learn about the origins of. It will
+          return and display definitions and etymologies from Merriam-Webster's
+          Dictionary. It will also show results from Wikipedia (if there is a
+          wikipedia article with that entry), either a disambiguation or a page
+          summary.
+        </p>
+        <p class="word-origins-text">
+          Finally, it will display 10 newspapers that contain the searched word
+          that have been archived in the Library of Congress and are available
+          online. The app gives you links to follow to view further information
+          whenever relevant.
+        </p>
+        <p class="word-origins-text">
+          <em>Technologies:</em> HTML5, CSS3, Javascript, and jQuery.
+        </p>
+
+        <a
+          class="link-button new-tab"
+          href="https://amypepper.github.io/word-origin-app/"
+          target="_blank"
+          >Live App<span class="hidden">(Opens in new tab)</span></a
+        >
+
+        <a
+          class="link-button new-tab"
+          href="https://github.com/amypepper/word-origin-app"
+          target="_blank"
+          >Repo<span class="hidden">(Opens in new tab)</span></a
+        >
+
+        <a
+          class="link-button screenshots-link"
+          href="word-origins-screenshots.html"
+          >See Full-Size Images</a
+        >
       </section>
     </main>
-
     <footer class="footer" id="contact-me">
       <p role="heading" class="footer-text">
         Contact Me
