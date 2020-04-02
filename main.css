@@ -7,10 +7,11 @@ html {
 }
 html,
 body {
+  margin: 0;
   box-sizing: border-box;
   min-height: 98vh;
   height: 98vh;
-  width: 98vw;
+  /* width: 98vw; */
   overflow-x: hidden;
 }
 *,
@@ -98,16 +99,23 @@ section.project-landing {
   margin: 10px 0;
 }
 article.project-landing {
-  width: 70%;
+  width: 60%;
+  padding: 15px;
+  border: solid 2px #1a0703;
+  margin: 30px 5px;
 }
-
+.project-landing p {
+  letter-spacing: 0.1rem;
+}
 .screenshot.hero,
-.quiz-app-text {
+.quiz-app-text,
+.word-origins-text {
   margin: 5px 0;
   width: 95%;
   line-height: 150%;
 }
-p.quiz-app-text {
+p.quiz-app-text,
+.word-origins-text {
   margin-bottom: 10px;
 }
 .link-button {
@@ -210,32 +218,20 @@ li:hover {
   display: none;
 }
 
-.footer-link:hover span,
-.footer-link:focus span {
-  display: block;
-  position: relative;
-  height: 20px;
-  width: 80px;
-  top: -70px;
-  left: 200px;
-  border: 1px solid #728f64;
-  background-color: white;
-  color: #55251d;
-  text-align: center;
+.project-landing-title {
+  margin-bottom: 20px;
 }
-.nav-link:focus span,
-.nav-link:hover span,
-.link-button.new-tab:hover span,
-.link-button.new-tab:focus span {
-  display: block;
-  position: relative;
-  width: 80px;
-  border: 1px solid #728f64;
-  background-color: white;
-  color: #55251d;
-  text-align: center;
+.link-button.project-details {
+  width: 150px;
 }
-
+section.headline {
+  width: 100%;
+}
+span.emphasize {
+  margin: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+}
 /*///////////////////////// //////// /////////////////////////*/
 /*////////////////////////// IMAGES //////////////////////////*/
 /*///////////////////////// //////// /////////////////////////*/
@@ -265,13 +261,16 @@ li:hover {
   margin: 5px;
 }
 
-/*********** MEDIA QUERIES **********************/
+/*///////////////////////// //////// /////////////////////////*/
+/*////////////////////// MEDIA QUERIES ///////////////////////*/
+/*///////////////////////// //////// /////////////////////////*/
 
 @media screen and (min-width: 520px) {
   .headshot {
     max-width: 300px;
   }
-  .quiz-app-text {
+  .quiz-app-text,
+  .word-origins-text {
     width: 100%;
     text-align: left;
     align-self: baseline;
@@ -319,9 +318,18 @@ li:hover {
     width: 60%;
     margin-left: 40%;
     margin-right: 0;
-    min-height: 96vh;
     justify-content: center;
     padding-left: 0;
+  }
+  section.headline {
+    height: 90vh;
+  }
+  section.word-origins-text,
+  section.quiz-app-text {
+    width: 100%;
+    letter-spacing: 0.05rem;
+    padding-left: 20%;
+    padding-right: 20%;
   }
   .headline.text {
     padding-left: 5px;
