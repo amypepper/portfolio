@@ -3,17 +3,19 @@
 }
 
 .nav-bar {
-  color: #918b79;
+  color: #728f64c9;
 }
 .main,
 body {
-  background-color: #918b79;
+  background-color: #728f64;
 }
 
 .text {
   color: #1a0703;
 }
-
+article.project-landing {
+  border: solid 2px #1a0703;
+}
 .link-button {
   color: white;
   background-color: #55251d;

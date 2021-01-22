@@ -11,7 +11,6 @@ body {
   box-sizing: border-box;
   min-height: 98vh;
   height: 98vh;
-  /* width: 98vw; */
   overflow-x: hidden;
 }
 *,
@@ -81,7 +80,7 @@ body,
 
 .text {
   margin: 10px auto;
-  padding: 0 5px;
+  padding: 0 20%;
 }
 .project-title {
   padding: 0;
@@ -101,7 +100,6 @@ section.project-landing {
 article.project-landing {
   width: 60%;
   padding: 15px;
-  border: solid 2px #1a0703;
   margin: 30px 5px;
 }
 .project-landing p {
@@ -166,7 +164,7 @@ li:hover {
   padding: 0;
   margin: 0;
 }
-/* flex grow proportions */
+
 .name-logo-link,
 .nav-bar,
 .nav-link.about,
@@ -242,7 +240,7 @@ span.emphasize {
   max-width: 600px;
 }
 .screenshot.landing {
-  width: 100%;
+  width: 95%;
   margin: 5px 0;
 }
 .screenshot.full {
