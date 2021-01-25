@@ -27,7 +27,7 @@ body * {
   text-decoration: none;
 }
 /*///////////////////////// //////// /////////////////////////*/
-/*////////////////////////// GLOBAL ///////////////////////////*/
+/*////////////////////////// MAIN ///////////////////////////*/
 /*///////////////////////// //////// /////////////////////////*/
 body,
 .header,
@@ -56,12 +56,6 @@ body,
   justify-content: center;
 }
 
-.screenshot-thumbs-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
 .main {
   width: 98vw;
 }
@@ -78,12 +72,12 @@ body,
   padding: 10px;
 }
 
-.text {
-  margin: 10px auto;
-}
 .project-title {
   padding: 0;
   margin: 5px 0;
+}
+h4.project-title {
+  margin: 10px 0 5px 0;
 }
 em {
   padding-left: 0;
@@ -96,25 +90,27 @@ em {
   width: 100%;
 }
 
-section.text {
-  width: 100%;
-  justify-content: space-evenly;
-}
-
 article.project-landing {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5%;
 }
 
-.quiz-app-text,
-.word-origins-text {
+.text {
   text-align: left;
-  max-width: 500px;
   margin: 5px 0 10px 0;
   padding-left: 10%;
   padding-right: 10%;
   line-height: 150%;
+}
+
+section.text {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+p.text {
+  width: 100%;
 }
 
 .app-description {
@@ -265,9 +261,7 @@ span.emphasize {
 .screenshot.full.top {
   margin-top: 10px;
 }
-.screenshot-thumbs {
-  width: 40%;
-}
+
 .headshot {
   width: 60%;
   padding: 0;
@@ -345,7 +339,16 @@ span.emphasize {
     line-height: 130%;
   }
   section.text {
+    padding-left: 0;
+    padding-right: 0;
     justify-content: center;
+  }
+  p.text {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  article.project-landing {
+    max-width: 650px;
   }
   .headline p {
     padding-left: 10%;
