@@ -96,8 +96,9 @@ em {
   width: 100%;
 }
 
-section.project-landing {
+section.text {
   width: 100%;
+  justify-content: space-evenly;
 }
 
 article.project-landing {
@@ -106,17 +107,16 @@ article.project-landing {
   padding: 5%;
 }
 
-.screenshot.hero,
 .quiz-app-text,
 .word-origins-text {
-  margin: 5px 0;
-  width: 95%;
+  text-align: left;
+  max-width: 500px;
+  margin: 5px 0 10px 0;
+  padding-left: 10%;
+  padding-right: 10%;
   line-height: 150%;
 }
-p.quiz-app-text,
-.word-origins-text {
-  margin-bottom: 10px;
-}
+
 .app-description {
   text-align: left;
   padding-left: 5%;
@@ -243,8 +243,16 @@ span.emphasize {
   padding: 0;
   max-width: 600px;
 }
+.screenshot.hero {
+  width: 100%;
+  margin: 0;
+}
+.hero-wrapper {
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
 .screenshot.landing {
-  flex-grow: 0.5;
   margin: 5px 0;
   height: auto;
   width: 225px;
@@ -275,21 +283,12 @@ span.emphasize {
     max-width: 300px;
   }
 
-  /* .text.project-landing {
-    padding-left: 20%;
-    padding-right: 20%;
-  } */
   article.project-landing {
     max-width: 350px;
     padding-left: 10%;
     padding-right: 10%;
   }
-  .quiz-app-text,
-  .word-origins-text {
-    width: 100%;
-    text-align: left;
-    align-self: baseline;
-  }
+
   .nav-link.logo-footer-link {
     height: 50px;
     padding-left: 20px;
@@ -331,38 +330,32 @@ span.emphasize {
   }
   .main {
     width: 60%;
+    min-height: 100vh;
     margin-left: 40%;
     margin-right: 0;
     justify-content: center;
     padding-left: 0;
+    padding-right: 0;
   }
-  section.headline {
-    height: 90vh;
-  }
-  section.word-origins-text,
-  section.quiz-app-text {
-    width: 100%;
-    letter-spacing: 0.05rem;
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  .headline.text {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+
   .project-landing.title {
     margin: 5% 0;
-
     padding-top: 5%;
     padding-bottom: 5%;
     line-height: 130%;
+  }
+  section.text {
+    justify-content: center;
+  }
+  .headline p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: fixed;
-
     left: 0;
     bottom: 0;
     height: 35vh;

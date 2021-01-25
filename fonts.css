@@ -84,11 +84,16 @@ span {
   span.emphasize {
     font-size: 1.7rem;
   }
+  h3.project-landing.title {
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 900px) {
-  .nav-bar h2,
-  .project-landing.title {
+  .nav-bar h2 {
     font-size: 2rem;
+  }
+  h3.project-landing.title {
+    font-size: 2.5rem;
   }
   .headline p {
     font-size: 1.5rem;
@@ -101,8 +106,5 @@ span {
   }
   .name-logo {
     font-size: 3rem;
-  }
-  .project-landing.title {
-    font-size: 2.5rem;
   }
 }
