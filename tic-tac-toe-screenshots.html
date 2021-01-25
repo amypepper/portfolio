@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="screenshots of Amy Pepper's tic-tac-toe app"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher:700,700i,800,800i,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="colors.css" />
+    <title>Amy Pepper's Tic Tac Toe App</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="nav-link name-logo-link" href="index.html"
+        ><h1 class="name-logo">Amy Pepper</h1></a
+      >
+      <nav class="nav-bar">
+        <a class="nav-link about" href="about.html"><h2>About</h2></a>
+        <a class="nav-link projects" href="projects.html"><h2>Projects</h2></a>
+        <a class="nav-link contact-nav hide-link" href="#contact-me"
+          ><h2 class="js-contact-link">Contact</h2></a
+        >
+      </nav>
+    </header>
+    <main class="main js-main">
+      <h3 class="hidden">Screenshots from my Tic Tac Toe App</h3>
+      <div class="screenshots-full-flex" role="figure">
+        <img
+          class="screenshot full top"
+          src="Images/Compressed/Tic-tac-toe_1.png"
+          alt="a screenshot of a tic tac toe board with instructions and a New Game button"
+        />
+        <img
+          class="screenshot full"
+          src="Images/Compressed/Tic-tac-toe_keyboard-nav.png"
+          alt="a screenshot showing the tic tac toe app's white dash-outlined box which indicates that keyboard navigation is active"
+        />
+        <img
+          class="screenshot full"
+          src="Images/Compressed/Tic-tac-toe_win.png"
+          alt="a screenshot showing a win scenario where X has won because three X's have been played diagonally from the top left square to the bottom right square"
+        />
+      </div>
+    </main>
+    <footer class="footer" id="contact-me">
+      <p role="heading" class="footer-text">Contact Me</p>
+
+      <a
+        class="footer-link"
+        target="_blank"
+        href="mailto:amycarlsonpepper@gmail.com"
+      >
+        Email: amycarlsonpepper@gmail.com
+        <span class="hidden">(Opens in new tab)</span></a
+      >
+
+      <div role="figure" class="logo-container">
+        <a
+          class="nav-link"
+          href="https://www.linkedin.com/in/amycarlsonpepper"
+          target="_blank"
+          ><img
+            class="linkedin-logo"
+            src="Images/Compressed/LI-In-Bug.png"
+            alt="LinkedIn logo that links to Amy's LinkedIn profile (opens in new tab)"
+        /></a>
+
+        <a class="nav-link" href="https://github.com/amypepper" target="_blank"
+          ><img
+            class="github-logo"
+            src="Images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png"
+            alt="GitHub logo that links to Amy's GitHub profile  (opens in new tab)"
+        /></a>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
