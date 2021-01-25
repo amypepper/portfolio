@@ -9,8 +9,8 @@ html,
 body {
   margin: 0;
   box-sizing: border-box;
-  min-height: 98vh;
-  height: 98vh;
+  min-height: 100vh;
+
   overflow-x: hidden;
 }
 *,
@@ -30,14 +30,14 @@ body * {
 /*////////////////////////// GLOBAL ///////////////////////////*/
 /*///////////////////////// //////// /////////////////////////*/
 body,
-.header {
+.header,
+.project-landing {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .main,
-.project-landing,
 .headline,
 .text,
 .footer,
@@ -80,7 +80,6 @@ body,
 
 .text {
   margin: 10px auto;
-  padding: 0 20%;
 }
 .project-title {
   padding: 0;
@@ -89,22 +88,27 @@ body,
 em {
   padding-left: 0;
 }
+.project-landing.title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 2px blue;
+  margin-bottom: 20px;
+  width: 100%;
+}
 
-.project-landing {
-  padding: 0;
-  margin: 0;
-}
 section.project-landing {
-  margin: 10px 0;
+  border: solid 2px pink;
+  width: 100%;
 }
+
 article.project-landing {
-  width: 60%;
-  padding: 15px;
-  margin: 30px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5%;
+  border: solid 5px green;
 }
-.project-landing p {
-  letter-spacing: 0.1rem;
-}
+
 .screenshot.hero,
 .quiz-app-text,
 .word-origins-text {
@@ -115,6 +119,11 @@ article.project-landing {
 p.quiz-app-text,
 .word-origins-text {
   margin-bottom: 10px;
+}
+.app-description {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .link-button {
   width: 200px;
@@ -133,6 +142,21 @@ h1:hover,
 button:hover,
 li:hover {
   cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.link-button.project-details {
+  width: 150px;
+}
+section.headline {
+  width: 100%;
+}
+span.emphasize {
+  margin: 0;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 /*///////////////////////// //////// /////////////////////////*/
@@ -179,17 +203,21 @@ li:hover {
 
 .footer {
   width: 100vw;
-
-  padding: 10px;
+  padding: 20px 10px;
   margin: 0;
 }
 
 .footer-text {
   padding: 5px;
 }
+
 .footer-link {
   padding: 12px 5px;
-  height: 50px;
+  height: 33%;
+}
+.logo-container .nav-link {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .hide-footer {
   display: none;
@@ -202,34 +230,13 @@ li:hover {
 }
 .logo-container {
   padding: 5px;
-  margin: 0;
+  margin: 5px 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/*///////////////////////// //////// /////////////////////////*/
-/*////////////////////////// MAIN //////////////////////////*/
-/*///////////////////////// //////// /////////////////////////*/
-
-.hidden {
-  display: none;
-}
-
-.project-landing-title {
-  margin-bottom: 20px;
-}
-.link-button.project-details {
-  width: 150px;
-}
-section.headline {
-  width: 100%;
-}
-span.emphasize {
-  margin: 0;
-  padding-left: 1%;
-  padding-right: 1%;
-}
 /*///////////////////////// //////// /////////////////////////*/
 /*////////////////////////// IMAGES //////////////////////////*/
 /*///////////////////////// //////// /////////////////////////*/
@@ -240,9 +247,12 @@ span.emphasize {
   max-width: 600px;
 }
 .screenshot.landing {
-  width: 95%;
+  flex-grow: 0.5;
   margin: 5px 0;
+  height: auto;
+  width: 225px;
 }
+
 .screenshot.full {
   width: 100%;
   margin-top: 50px;
@@ -266,6 +276,16 @@ span.emphasize {
 @media screen and (min-width: 520px) {
   .headshot {
     max-width: 300px;
+  }
+
+  /* .text.project-landing {
+    padding-left: 20%;
+    padding-right: 20%;
+  } */
+  article.project-landing {
+    max-width: 350px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .quiz-app-text,
   .word-origins-text {
@@ -332,6 +352,13 @@ span.emphasize {
   .headline.text {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .project-landing.title {
+    margin: 5% 0;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    line-height: 130%;
   }
   .footer {
     display: flex;
